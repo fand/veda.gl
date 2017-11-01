@@ -1,0 +1,7 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      ["inline-import", { "extensions": [".md", ".frag", ".vert"] }],
+      ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ],
+    ],
+}

@@ -1,0 +1,213 @@
+import React from 'react';
+import A from './a';
+import styled from 'styled-components';
+import Folder from './folder';
+import DropDown from './dropdown';
+import Link from 'next/link';
+import colors from './colors';
+import { throttle } from 'lodash';
+import { toggleMenu, setLanguage } from '../actions';
+import { connect } from 'react-redux';
+
+const Nav = styled.div`
+  position: relative;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  transition: 0.5s;
+  background: transparent;
+  .mobile {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    &.visible {
+      background: linear-gradient(to bottom, rgba(0, 0, 30, 1), rgba(0, 0, 30, 0.5));
+    }
+    .mobile {
+      display: block;
+    }
+    .pc {
+      display: none;
+    }
+  }
+  .none {
+    display: none;
+  }
+`;
+
+const Logo = styled.div`
+  height: 100%;
+  padding: 4px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  @media (max-width: 767px) {
+    transition: opacity 1s;
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  a, img {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+  }
+  img {
+    margin-left: -10px;
+  }
+`;
+
+const Left = styled.div`
+  position: absolute;
+  left: 0;
+`;
+const Right = styled.div`
+  position: absolute;
+  display: flex;
+  right: 0;
+`;
+const Button = styled.div`
+  cursor: pointer;
+  color: #DDD;
+  user-select: none;
+  & > img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  span {
+    padding: 15px;
+    position: relative;
+    display: block;
+    top: -1em;
+  }
+  &:hover {
+    opacity: 1;
+    color: #FFF;
+  }
+
+  .inner {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    i {
+      margin-right: 10px;
+      text-align: center;
+    }
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    &.visible {
+      width: 180px;
+      display: block;
+      opacity: 1;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: -30px;
+      right: 12px;
+      border: 15px solid transparent;
+      border-bottom: 15px solid black;
+    }
+  }
+`
+
+class Header extends React.Component {
+  state = {
+    share: false,
+  }
+
+  componentDidMount() {
+    const lang = (location.search.match(/lang=(en|ja)/) || [])[1];
+    if (lang && lang !== this.props.lang) {
+      this.props.dispatch(setLanguage(lang));
+    }
+  }
+
+  toggleMenu = () => {
+    this.props.dispatch(toggleMenu());
+  }
+
+  toggleLanguage = () => {
+    this.props.dispatch(setLanguage(this.props.lang === 'en' ? 'ja' : 'en'));
+  }
+
+  toggleShare = () => {
+    this.setState({
+      share: !this.state.share,
+    });
+  }
+
+  render() {
+    const cls = this.props.isHeaderVisible ? 'visible' : '';
+    const { url, title, lang } = this.props;
+    return (
+      <Nav className={cls}>
+        <Logo className={cls}>
+          <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
+            <a>
+              <img src="/static/images/logo_header.png"/>
+            </a>
+          </Link>
+        </Logo>
+
+        <Left>
+          <Button onClick={this.toggleMenu} className="mobile">
+            <img src="/static/images/i_menu.png"/>
+          </Button>
+        </Left>
+        <Right>
+          {this.props.i18n &&
+            <Button onClick={this.toggleLanguage}>
+              {lang === 'en' &&
+                <span>日本語</span>
+              }
+              {lang === 'ja' &&
+                <span>English</span>
+              }
+            </Button>
+          }
+          <Button className="none" onClick={this.toggleShare}>
+            <img src="/static/images/i_share.png"/>
+            <div className={'inner' + (this.state.share ? ' visible' : '')}>
+              <div>
+                <a target="_blank" href={`https://twitter.com/intent/tweet?url=${url}&text=${title}`}>
+                  <i className="fa fa-twitter"/>Twitter
+                </a>
+              </div>
+              <div>
+                <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}>
+                  <i className="fa fa-facebook"/>Facebook
+                </a>
+              </div>
+              <div>
+                <a target="_blank" href={`http://service.weibo.com/share/share.php?url=${url}&title=${title}`}>
+                  <i className="fa fa-weibo"/>Weibo
+                </a>
+              </div>
+            </div>
+          </Button>
+        </Right>
+      </Nav>
+    );
+  }
+}
+
+export default connect(s => s)(Header);
