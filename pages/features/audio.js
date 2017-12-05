@@ -2,7 +2,8 @@ import Article from '../../components/article';
 import parse from '../parse';
 import en from './audio.md';
 import ja from './audio.ja.md';
-import shader from './audio.frag';
+import defaultShader from './index.frag';
+import audioShader from './audio.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
@@ -13,11 +14,11 @@ export default withReduxSaga(() => (
     }}
     shader={{
       attach(veda) {
+        veda.loadFragmentShader(defaultShader);
         window.addEventListener('click', e => {
-          console.log(e);
           if (e.target.id === 'enable')  {
             veda.toggleAudio(true);
-            veda.loadFragmentShader(shader);
+            veda.loadFragmentShader(audioShader);
           }
         });
       },

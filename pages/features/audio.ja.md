@@ -1,10 +1,10 @@
 # 音声入力
 
-<p class="pc-only">以下のボタンを押すと、音声入力によるGLSL表現のサンプルが再生されます。
+<!-- <p class="pc-only">以下のボタンを押すと、音声入力によるGLSL表現のサンプルが再生されます。
 
 <button id="enable">音声入力の使用を許可する</button>
 
-</p>
+</p> -->
 
 VEDAでは、音声入力からのデータをGLSL上で利用できます。
 [Settings](/settings?lang=ja)で `"audio": true` すると、以下のuniform変数が利用できるようになります。
@@ -21,8 +21,9 @@ VEDAでは、音声入力からのデータをGLSL上で利用できます。
 
 `float volume` は、`spectrum` における全周波数帯でのボリュームの平均の値です。
 
+詳しくは[examples](https://github.com/fand/veda/blob/master/examples/audio.frag)をご覧ください。
 
-## 例
+<!-- ## 例
 
 以下はこのページをPCで開いた時に実行されるGLSLコードです。
 
@@ -57,4 +58,4 @@ void main() {
     1.
   ) + texture2D(backbuffer, uv)*.8;
 }
-```
+``` -->

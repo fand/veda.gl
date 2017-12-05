@@ -95,7 +95,7 @@ const Li = connect(s => s)(({ children, to, path, dispatch, lang }) => (
 const Sidebar = ({ path, lang }) => (
   <Nav>
     <Header>
-      <Link href={lang === 'en' ? '/' : `/  ?lang=${lang}`}>
+      <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
         <a>
           <img className="logo"  src="/static/images/logo_header.png"/>
         </a>

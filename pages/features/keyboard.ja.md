@@ -1,5 +1,10 @@
 # キーボード入力
 
+<p class="pc-only">このページでは、キーボード入力を用いたGLSLコードが実行されています。
+  キーボードを押してみてください！  
+
+</p>
+
 VEDAでは、キーボード入力の状態を利用できます。
 [Settings](/settings?lang=ja)で `"keyboard": true` すると、以下のuniform変数が利用できるようになります。
 

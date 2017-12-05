@@ -13,6 +13,7 @@ export default withReduxSaga(() => (
     }}
     shader={{
       attach(veda) {
+        veda.setFrameskip(2);
         veda.toggleKeyboard(true);
         veda.loadTexture('font', '/static/images/font.png');
         veda.loadFragmentShader(shader);

@@ -1,5 +1,11 @@
 # Keyboard input
 
+<p class="pc-only">A fragment shader using keyboard inputs is running in this page.
+  Hit any key and see what's happening!
+
+</p>
+
+
 VEDA supports keyboard input.
 When you add `"keyboard": true` to [Settings](/settings), VEDA enables this uniform variable:
 
