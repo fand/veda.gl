@@ -100,8 +100,8 @@ const Sidebar = ({ path, lang }) => (
         </a>
       </Link>
       <div className="banners">
-        <a className="github" target="\_blank" href="https://github.com/fand/atom-veda">
-          <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/atom-veda.svg?style=social"/>
+        <a className="github" target="\_blank" href="https://github.com/fand/veda">
+          <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/>
         </a>
         <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">
           <img alt="hashtag #vedajs" src="/static/images/hashtag.png"/>

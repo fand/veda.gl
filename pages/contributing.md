@@ -7,7 +7,7 @@ title: CONTRIBUTING
 
 If you find bugs, or wanna request new features, open an issue on GitHub:
 
-https://github.com/fand/atom-veda/issues
+https://github.com/fand/veda/issues
 
 Or you can ask us on [hashtag \#VEDAJS](https://twitter.com/search?f=tweets&q=%23vedajs&src=typd) and [TOPLAP Slack](https://toplap.org/toplap-on-slack/).
 
@@ -18,7 +18,7 @@ Ask us anything anytime!😸
 
 We're always waiting for your Pull Request!
 
-- https://github.com/fand/atom-veda
+- https://github.com/fand/veda
 - https://github.com/fand/vedajs
 
 For VEDA development, you have to clone [fand/veda](https://github.com/fand/veda) and [fand/vedajs](https://github.com/fand/vedajs).

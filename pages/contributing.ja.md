@@ -7,7 +7,7 @@ title: CONTRIBUTING
 
 バグを見つけたり、欲しい機能をリクエストしたい場合は、GitHubでissueを立ててください👇
 
-https://github.com/fand/atom-veda/issues
+https://github.com/fand/veda/issues
 
 あるいは、[Twitterのハッシュタグ \#VEDAJS](https://twitter.com/search?f=tweets&q=%23vedajs&src=typd)や、[TOPLAP Slack](https://toplap.org/toplap-on-slack/)でもOKです。
 いつでも気軽にコメントしてください！😸
