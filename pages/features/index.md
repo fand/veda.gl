@@ -1,3 +1,6 @@
+---
+title: Features
+---
 # Features
 
 - [Loading Images](/features/image)

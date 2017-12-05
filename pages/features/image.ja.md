@@ -1,6 +1,5 @@
 ---
-title: Loading images - VEDA.js
-description: How to use images as textures in GLSL with VEDA.js
+title: 画像/動画のロード
 ---
 # 画像/動画をロードする
 

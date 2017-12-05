@@ -1,5 +1,5 @@
 ---
-title: Loading images - VEDA.js
+title: Loading Images & Videos
 description: How to use images as textures in GLSL with VEDA.js
 ---
 # Loading images & videos

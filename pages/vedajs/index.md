@@ -1,3 +1,6 @@
+---
+title: VEDA.js
+---
 <div align="center">
   <img alt="logo" src="https://user-images.githubusercontent.com/1403842/28923702-d8155d46-7899-11e7-817b-1193d138e5b8.png" width="192"/>
 

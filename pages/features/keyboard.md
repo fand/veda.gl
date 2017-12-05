@@ -1,4 +1,7 @@
-# Keyboard input
+---
+title: Keyboard Input
+---
+# Keyboard Input
 
 <p class="pc-only">A fragment shader using keyboard inputs is running in this page.
   Hit any key and see what's happening!

@@ -1,4 +1,7 @@
-# Gamepad input
+---
+title: Gamepad Input
+---
+# Gamepad Input
 
 VEDA supports gamepad inputs using Gamepad API.
 When you add `"gamepad": true` to [Settings](/settings), VEDA enables this uniform variable:

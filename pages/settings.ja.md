@@ -1,4 +1,7 @@
-# Settings
+---
+title: 設定方法
+---
+# 設定方法
 
 VEDAの設定は、 `Global Settings`, `Project Settings`, `File Settings` の3通りの方法で行います。
 

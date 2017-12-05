@@ -1,4 +1,7 @@
-# OSC input
+---
+title: OSC Input
+---
+# OSC Input
 
 VEDA supports OSC inputs.
 You can use VEDA in sync with SuperCollider, TouchDesigner, openFrameworks, etc!

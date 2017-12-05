@@ -1,3 +1,6 @@
+---
+title: CONTRIBUTING
+---
 # CONTRIBUTING
 
 ## 新機能のリクエスト・バグレポート

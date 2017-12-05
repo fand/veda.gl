@@ -1,3 +1,6 @@
+---
+title: MIDI Input
+---
 # MIDI input
 
 VEDA supports MIDI input.

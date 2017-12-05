@@ -1,3 +1,6 @@
+---
+title: Install VEDA
+---
 # Install VEDA
 
 Let your editor blink!

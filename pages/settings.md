@@ -1,3 +1,6 @@
+---
+title: Settings
+---
 # Settings
 
 VEDA has 3 ways to change settings: `Global Settings`, `Project Settings` and `File Settings`.

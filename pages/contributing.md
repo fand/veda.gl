@@ -1,3 +1,6 @@
+---
+title: CONTRIBUTING
+---
 # CONTRIBUTING
 
 ## Feature Requests & Bug Reports

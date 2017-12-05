@@ -1,3 +1,6 @@
+---
+title: Usage
+---
 # Usage
 
 In this page we'll explain the basic usage of VEDA.

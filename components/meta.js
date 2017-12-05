@@ -21,7 +21,7 @@ export default ({ url, title, image, description, siteName }) => <div>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@amagitakayosi"/>
     <meta name="twitter:creator" content="@amagitakayosi"/>
-    <meta name="twitter:url" content="https://gmork.in/vedajs"/>
+    <meta name="twitter:url" content={url}/>
     <meta name="twitter:title" content={title}/>
     <meta name="twitter:description" content={description}/>
     <meta name="twitter:image" content={image}/>

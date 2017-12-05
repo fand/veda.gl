@@ -1,3 +1,6 @@
+---
+title: FAQ
+---
 # FAQ
 
 If you have any question, feel free to ask on:

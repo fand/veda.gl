@@ -1,3 +1,6 @@
+---
+title: Audio Input
+---
 # Audio Input
 
 <!-- <p class="pc-only">Click this button to see an example of GLSL using audio inputs.

@@ -1,7 +1,3 @@
----
-title: VEDA - VJ system on Atom
-description: VEDA is an Atom package for VJ / Livecoding with GLSL built on Web technologies.
----
 <div align="center">
   <img alt="logo" src="https://user-images.githubusercontent.com/1403842/28923702-d8155d46-7899-11e7-817b-1193d138e5b8.png" width="192"/>
   <h1>VEDA</h1><i>VJ system on Atom</i>

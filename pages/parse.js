@@ -19,7 +19,8 @@ export default function parse(_md) {
   const { data, content } = frontmatter(_md);
   const md = content.trim();
   return {
-    ...data, content,
+    ...data,
+    content,
     html: marked(md),
   };
 }

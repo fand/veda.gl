@@ -1,3 +1,6 @@
+---
+title: 機能一覧
+---
 # 機能一覧
 
 - [画像/動画のロード](/features/image?lang=ja)

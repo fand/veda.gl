@@ -1,4 +1,7 @@
-# OSC input
+---
+title: OSC Input
+---
+# OSC Input
 
 VEDAはOSC形式の入力に対応しています。
 これにより、SuperColliderやTouchDesigner、openFrameworksといったソフトウェアと同期することができます！

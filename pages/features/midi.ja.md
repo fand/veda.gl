@@ -1,3 +1,6 @@
+---
+title: MIDI入力
+---
 # MIDI入力
 
 VEDAでは、MIDI入力からのイベントをGLSL上で利用できます。

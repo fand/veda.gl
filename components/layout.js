@@ -11,11 +11,11 @@ import Meta from './meta';
 import Shader from './shader';
 
 const DEFAULT = {
-  title: `VEDA - Shader Art Framework #VEDAJS #GLSL`,
+  title: `VEDA - VJ system on Atom #VEDAJS #GLSL`,
   description: `
-VEDA.js is a framework to develop shader arts for WebGL.
-You can run any fragment shaders or vertex shaders in browsers.
-It also supports audio inputs, MIDI, OSC, WebCam, Gamepads and more!
+VEDA is a GLSL runtime environment for Atom.
+It's just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
+Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!
   `.trim(),
   image: '/static/logo.png',
 };
@@ -90,7 +90,7 @@ class Layout extends React.Component {
   }, 100)
 
   url() {
-    return `https://gmork.in/vedajs${this.props.path}`;
+    return `http://veda.gl${this.props.path}`;
   }
 
   siteName() {
@@ -115,21 +115,23 @@ class Layout extends React.Component {
 
   render() {
     const sc = this.props.isMenuVisible ? 'menu' : '';
+    const article = this.props.article[this.props.lang] || this.props.article.en;
+    const title = (article.title ? article.title + ' | ' : '') + DEFAULT.title;
     return (
       <div>
         <Meta
           url={this.url()}
-          title={this.title()}
-          image={this.image()}
-          description={this.description()}
-          siteName={this.siteName()}/>
+          title={title}
+          image={DEFAULT.image}
+          description={DEFAULT.description}
+          siteName={DEFAULT.title}/>
         <Wrapper className={sc}>
           <SidebarWrapper className={sc}>
             <Sidebar path={this.props.path}/>
           </SidebarWrapper>
           <BodyColumn>
             <HeaderWrapper>
-              <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={this.title()}/>
+              <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={title}/>
             </HeaderWrapper>
             <MainWrapper className="body" innerRef={this.setBody}>
               {this.props.children}

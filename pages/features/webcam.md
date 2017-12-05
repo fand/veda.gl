@@ -1,4 +1,7 @@
-# WebCam input
+---
+title: WebCam Input
+---
+# WebCam Input
 
 <!-- <p class="pc-only">Click this button to see an example of GLSL using WebCam.
 
