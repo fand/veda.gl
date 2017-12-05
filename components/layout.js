@@ -4,7 +4,7 @@ import { hideMenu, showHeader, hideHeader, setLanguage } from '../actions';
 import Link from 'next/link';
 import { throttle } from 'lodash';
 import styled from 'styled-components';
-import colors from './colors';
+import constants from './constants';
 import Sidebar from './sidebar';
 import Header from './header';
 import Meta from './meta';
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   display: flex;
 
   transition: left 0.3s;
-  @media (max-width: 767px) {
+  @media (max-width: ${constants.mobile}px) {
     width: auto;
     left: -82vw;
     &.menu {
@@ -41,14 +41,14 @@ const Wrapper = styled.div`
 const SidebarWrapper = styled.div`
   width: 270px;
   -webkit-overflow-scrolling: touch;
-  @media (max-width: 767px) {
+  @media (max-width: ${constants.mobile}px) {
     width: 82vw;
   }
 `
 const BodyColumn = styled.div`
   flex: 1;
   position: relative;
-  @media (max-width: 767px) {
+  @media (max-width: ${constants.mobile}px) {
     width: 100vw;
   }
 `;

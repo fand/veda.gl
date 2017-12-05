@@ -1,5 +1,5 @@
 import Helmet from 'react-helmet';
-import colors from './colors';
+import constants from './constants';
 
 export default ({ url, title, image, description, siteName }) => <div>
   <Helmet>
@@ -49,8 +49,8 @@ export default ({ url, title, image, description, siteName }) => <div>
     body {
       margin: 0;
       padding: 0;
-      background: ${colors.syntaxBg};
-      color: ${colors.syntaxFg};
+      background: ${constants.bg};
+      color: ${constants.fg};
       font-family: monospace;
       font-size: 16px;
       line-height: 1.8em;
@@ -70,7 +70,7 @@ export default ({ url, title, image, description, siteName }) => <div>
       max-width: 100%;
     }
     a, a:visited, a:hover {
-      color: ${colors.syntaxAccent};
+      color: ${constants.link};
       font-weight: normal;
     }
     ul {
@@ -106,7 +106,7 @@ export default ({ url, title, image, description, siteName }) => <div>
     hr {
       width: 60%;
       height: 1px !important;
-      background: #FFF;
+      background: ${constants.fg};
       border: none;
       margin: 50px auto;
     }
@@ -121,7 +121,7 @@ export default ({ url, title, image, description, siteName }) => <div>
     .pc-only button {
       cursor: pointer;
     }
-    @media (max-width: 767px) {
+    @media (mac-width: ${constants.mobile}px) {
       .pc-only {
         display: none;
       }

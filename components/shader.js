@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { throttle } from 'lodash';
+import constants from 'constants';
 
 import frag from './shader.frag';
 const DEFAULT_SHADER = {
@@ -30,7 +31,7 @@ const Canvas = styled.canvas`
 class Shader extends React.Component {
   getShader() {
     // Use DEFAULT_SHADER in mobile
-    if (window.innerWidth <= 767) {
+    if (window.innerWidth <= constants.mobile) {
       return DEFAULT_SHADER;
     }
     return this.props.shader || DEFAULT_SHADER;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from './layout';
 import { connect } from 'react-redux';
+import constants from './constants';
 
 const Article = (props) => (
   <Layout {...props}>
@@ -13,7 +14,7 @@ const Article = (props) => (
         padding: 0;
         overflow: hidden;
       }
-      @media (max-width: 767px) {
+      @media (max-width: ${constants.mobile}px) {
         article {
           margin-top: 60px;
         }

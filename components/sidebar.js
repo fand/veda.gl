@@ -1,8 +1,7 @@
 import A from './a';
 import styled from 'styled-components';
-import Folder from './folder';
 import Link from 'next/link';
-import colors from './colors';
+import constants from './constants';
 import { connect } from 'react-redux';
 import { hideMenu } from '../actions';
 
@@ -40,13 +39,13 @@ const Nav = styled.nav`
   li a {
     display: block;
     text-decoration: none;
-    color: ${colors.syntaxFg};
+    color: ${constants.fg};
     &:hover {
-      color: ${colors.syntaxAccent};
+      color: ${constants.link};
       text-decoration: underline;
     }
     &:visited {
-      color: ${colors.syntaxFg};
+      color: ${constants.fg};
     }
   }
 `;

@@ -1,10 +1,8 @@
 import React from 'react';
 import A from './a';
 import styled from 'styled-components';
-import Folder from './folder';
-import DropDown from './dropdown';
 import Link from 'next/link';
-import colors from './colors';
+import constants from './constants';
 import { throttle } from 'lodash';
 import { toggleMenu, setLanguage } from '../actions';
 import { connect } from 'react-redux';
@@ -19,7 +17,7 @@ const Nav = styled.div`
   .mobile {
     display: none;
   }
-  @media (max-width: 767px) {
+  @media (max-width: ${constants.mobile}px) {
     &.visible {
       background: linear-gradient(to bottom, rgba(0, 0, 30, 1), rgba(0, 0, 30, 0.5));
     }
@@ -43,7 +41,7 @@ const Logo = styled.div`
   transform: translateX(-50%);
 
   opacity: 0;
-  @media (max-width: 767px) {
+  @media (max-width: ${constants.mobile}px) {
     transition: opacity 1s;
     &.visible {
       opacity: 1;
