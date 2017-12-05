@@ -17,7 +17,7 @@ VEDA is a GLSL runtime environment for Atom.
 It's just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
 Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!
   `.trim(),
-  image: '/static/logo.png',
+  image: '/static/images/logo_720h.png',
 };
 
 const Wrapper = styled.div`
