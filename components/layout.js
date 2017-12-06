@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { hideMenu, showHeader, hideHeader, setLanguage } from '../actions';
-import Link from 'next/link';
+import { hideMenu, showHeader, hideHeader } from '../actions';
 import { throttle } from 'lodash';
 import styled from 'styled-components';
 import constants from './constants';
@@ -44,7 +43,7 @@ const SidebarWrapper = styled.div`
   @media (max-width: ${constants.mobile}px) {
     width: 82vw;
   }
-`
+`;
 const BodyColumn = styled.div`
   flex: 1;
   position: relative;
@@ -68,7 +67,7 @@ const HeaderWrapper = styled.div`
   top: 0;
   width: 100%;
   z-index: 2;
-`
+`;
 
 class Layout extends React.Component {
   static getInitialProps = async ({ pathname }) => ({
@@ -124,7 +123,8 @@ class Layout extends React.Component {
           title={title}
           image={DEFAULT.image}
           description={DEFAULT.description}
-          siteName={DEFAULT.title}/>
+          siteName={DEFAULT.title}
+        />
         <Wrapper className={sc}>
           <SidebarWrapper className={sc}>
             <Sidebar path={this.props.path}/>

@@ -10,7 +10,7 @@ marked.setOptions({
   gfm: true,
   tables: true,
   breaks: true,
-  highlight: (code, lang) => {
+  highlight: code => {
     return hljs.highlightAuto(code).value;
   },
 });

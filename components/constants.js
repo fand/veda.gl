@@ -4,4 +4,4 @@ export default {
   link: '#88eeff',
   mobile: 767,
   pc: 768,
-}
+};

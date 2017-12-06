@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './keyboard.md';
@@ -6,7 +7,8 @@ import shader from './keyboard.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
-  <Article path="/features/keyboard"
+  <Article
+    path="/features/keyboard"
     article={{
       en: parse(en),
       ja: parse(ja),
@@ -22,5 +24,6 @@ export default withReduxSaga(() => (
         veda.toggleKeyboard(false);
         veda.unloadTexture('font', '/static/images/font.png');
       },
-    }}/>
+    }}
+  />
 ));

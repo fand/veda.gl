@@ -3,23 +3,25 @@ import Layout from './layout';
 import { connect } from 'react-redux';
 import constants from './constants';
 
-const Article = (props) => (
+const Article = props => (
   <Layout {...props}>
     <article dangerouslySetInnerHTML={{ __html: (props.article[props.lang] || props.article.en).html }}/>
-    <style jsx>{`
-      article {
-        width: 90%;
-        max-width: 680px;
-        margin: 20px auto 120px;
-        padding: 0;
-        overflow: hidden;
-      }
-      @media (max-width: ${constants.mobile}px) {
+    <style jsx>
+      {`
         article {
-          margin-top: 60px;
+          width: 90%;
+          max-width: 680px;
+          margin: 20px auto 120px;
+          padding: 0;
+          overflow: hidden;
         }
-      }
-    `}</style>
+        @media (max-width: ${constants.mobile}px) {
+          article {
+            margin-top: 60px;
+          }
+        }
+      `}
+    </style>
   </Layout>
 );
 

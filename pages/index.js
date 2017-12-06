@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../components/article';
 import parse from './parse';
 import en from './index.md';
@@ -9,7 +10,6 @@ const shader = {
   attach(veda) {
     veda.loadFragmentShader(frag);
   },
-  detach(){},
 };
 
 const article = {

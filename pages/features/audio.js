@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './audio.md';
@@ -7,7 +8,8 @@ import audioShader from './audio.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
-  <Article path="/features/audio"
+  <Article
+    path="/features/audio"
     article={{
       en: parse(en),
       ja: parse(ja),
@@ -16,7 +18,7 @@ export default withReduxSaga(() => (
       attach(veda) {
         veda.loadFragmentShader(defaultShader);
         window.addEventListener('click', e => {
-          if (e.target.id === 'enable')  {
+          if (e.target.id === 'enable') {
             veda.toggleAudio(true);
             veda.loadFragmentShader(audioShader);
           }
@@ -25,5 +27,6 @@ export default withReduxSaga(() => (
       detach(veda) {
         veda.toggleAudio(false);
       },
-    }}/>
+    }}
+  />
 ));

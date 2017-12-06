@@ -1,130 +1,134 @@
+import React from 'react';
 import Helmet from 'react-helmet';
 import constants from './constants';
 
-export default ({ url, title, image, description, siteName }) => <div>
-  <Helmet>
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>{title}</title>
+export default ({ url, title, image, description, siteName }) => (
+  <div>
+    <Helmet>
+      <meta charSet="utf-8"/>
+      <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <title>{title}</title>
 
-    // Facebook
-    <meta property="og:url" content={url}/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content={title}/>
-    <meta property="og:image" content={image}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:site_name" content={siteName}/>
-    <meta property="og:locale" content="en_US"/>
+      {/* Facebook */}
+      <meta property="og:url" content={url}/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content={title}/>
+      <meta property="og:image" content={image}/>
+      <meta property="og:description" content={description}/>
+      <meta property="og:site_name" content={siteName}/>
+      <meta property="og:locale" content="en_US"/>
 
-    // Twitter Cards
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@amagitakayosi"/>
-    <meta name="twitter:creator" content="@amagitakayosi"/>
-    <meta name="twitter:url" content={url}/>
-    <meta name="twitter:title" content={title}/>
-    <meta name="twitter:description" content={description}/>
-    <meta name="twitter:image" content={image}/>
+      {/* Twitter Cards */}
+      <meta name="twitter:card" content="summary"/>
+      <meta name="twitter:site" content="@amagitakayosi"/>
+      <meta name="twitter:creator" content="@amagitakayosi"/>
+      <meta name="twitter:url" content={url}/>
+      <meta name="twitter:title" content={title}/>
+      <meta name="twitter:description" content={description}/>
+      <meta name="twitter:image" content={image}/>
 
-    // Google+ / Schema.org
-    <meta itemprop="name" content={title}/>
-    <meta itemprop="description" content={title}/>
-    <meta itemprop="image" content={image}/>
+      {/* Google+ / Schema.org */}
+      <meta itemProp="name" content={title}/>
+      <meta itemProp="description" content={title}/>
+      <meta itemProp="image" content={image}/>
 
-    // Favicons
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png"/>
-    <link rel="manifest" href="/static/favicons/manifest.json"/>
-    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
-    <meta name="theme-color" content="#ffffff"/>
+      {/* Favicons */}
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png"/>
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png"/>
+      <link rel="manifest" href="/static/favicons/manifest.json"/>
+      <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+      <meta name="theme-color" content="#ffffff"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600"/>
-  </Helmet>
-  <script async src="https://use.fontawesome.com/9f93baf7cc.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js"></script>
-  <style global jsx>{`
-    body {
-      margin: 0;
-      padding: 0;
-      background: ${constants.bg};
-      color: ${constants.fg};
-      font-family: monospace;
-      font-size: 16px;
-      line-height: 1.8em;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      text-rendering: auto;
-      text-shadow: 0 0 2px black;
-      -webkit-font-smoothing: antialiased;
-    }
-    pre {
-      padding: 10px;
-      background: #000;
-      font-family: monospace;
-      overflow: scroll;
-    }
-    article img {
-      max-width: 100%;
-    }
-    a, a:visited, a:hover {
-      color: ${constants.link};
-      font-weight: normal;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-    h1 {
-      font-weight: 100;
-      line-height: 1.6em;
-    }
-    h2, h3, h4, h5, h6 {
-      font-weight: 400;
-      line-height: 2em;
-      margin: 2em 0 0em;
-    }
-    h2 { font-size: 1.5em; }
-    h3 { font-size: 1.4em; }
-    h4 { font-size: 1.3em; }
-    h5 { font-size: 1.2em; }
-    h5 { font-size: 1.2em; }
-    p {
-      margin: 1em 0;
-    }
-    .veda-video-source {
-      z-index: -999;
-      pointer-events: none;
-      position: fixed;
-      top:100%;
-    }
-    hr {
-      width: 60%;
-      height: 1px !important;
-      background: ${constants.fg};
-      border: none;
-      margin: 50px auto;
-    }
-    code {
-      padding: 2px 4px;
-      background: black;
-      font-family: Courier, monospace !important;
-    }
-    .pc-only {
-      font-style: italic;
-    }
-    .pc-only button {
-      cursor: pointer;
-    }
-    @media (mac-width: ${constants.mobile}px) {
-      .pc-only {
-        display: none;
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600"/>
+    </Helmet>
+    <script async src="https://use.fontawesome.com/9f93baf7cc.js"/>
+    <script async src="https://platform.twitter.com/widgets.js"/>
+    <style global jsx>{`
+      body {
+        margin: 0;
+        padding: 0;
+        background: ${constants.bg};
+        color: ${constants.fg};
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 1.8em;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        text-rendering: auto;
+        text-shadow: 0 0 2px black;
+        -webkit-font-smoothing: antialiased;
       }
-    }
-  `}</style>
-</div>
+      pre {
+        padding: 10px;
+        background: #000;
+        font-family: monospace;
+        overflow: scroll;
+      }
+      article img {
+        max-width: 100%;
+      }
+      a, a:visited, a:hover {
+        color: ${constants.link};
+        font-weight: normal;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      h1 {
+        font-weight: 100;
+        line-height: 1.6em;
+      }
+      h2, h3, h4, h5, h6 {
+        font-weight: 400;
+        line-height: 2em;
+        margin: 2em 0 0em;
+      }
+      h2 { font-size: 1.5em; }
+      h3 { font-size: 1.4em; }
+      h4 { font-size: 1.3em; }
+      h5 { font-size: 1.2em; }
+      h5 { font-size: 1.2em; }
+      p {
+        margin: 1em 0;
+      }
+      .veda-video-source {
+        z-index: -999;
+        pointer-events: none;
+        position: fixed;
+        top:100%;
+      }
+      hr {
+        width: 60%;
+        height: 1px !important;
+        background: ${constants.fg};
+        border: none;
+        margin: 50px auto;
+      }
+      code {
+        padding: 2px 4px;
+        background: black;
+        font-family: Courier, monospace !important;
+      }
+      .pc-only {
+        font-style: italic;
+      }
+      .pc-only button {
+        cursor: pointer;
+      }
+      @media (mac-width: ${constants.mobile}px) {
+        .pc-only {
+          display: none;
+        }
+      }
+    `}
+    </style>
+  </div>
+);

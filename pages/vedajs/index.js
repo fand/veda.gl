@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './index.md';
@@ -6,7 +7,8 @@ import shader from './index.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
-  <Article path="/vedajs"
+  <Article
+    path="/vedajs"
     article={{
       en: parse(en),
       ja: parse(ja),
@@ -15,6 +17,6 @@ export default withReduxSaga(() => (
       attach(veda) {
         veda.loadFragmentShader(shader);
       },
-      detach() {},
-    }}/>
+    }}
+  />
 ));

@@ -1,6 +1,7 @@
+import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import Helmet from 'react-helmet';
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet } from 'styled-components';
 
 export default class extends Document {
   static async getInitialProps(...args) {
@@ -32,7 +33,8 @@ export default class extends Document {
         meta={[
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           { property: 'og:title', content: 'VEDA.js - Shader Art Framework' },
-        ]}/>
+        ]}
+      />
     );
   }
 

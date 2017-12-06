@@ -1,4 +1,4 @@
-import A from './a';
+import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import constants from './constants';
@@ -73,97 +73,103 @@ const Header = styled.div`
 `;
 
 const isActive = (path, to) => {
-  const [_, pathname, query, hash] = (to || '').match(/^([^#\?]*)\??([^#]*)#?(.*)$/);
+  const pathname = (to || '').match(/^([^#\?]*)\??([^#]*)#?(.*)$/)[1];
   return path === pathname;
-}
+};
 
-const Li = connect(s => s)(({ children, to, path, dispatch, lang }) => (
-  <div onClick={() => dispatch(hideMenu())}>
-    {isActive(path, to) ? (
-      <li className="active">
-        {children}
-      </li>
-    ) : (
-      <li>
-        <Link href={to}><a>{children}</a></Link>
-      </li>
-    )}
-  </div>
-));
+class Sidebar extends React.PureComponent {
+  hideMenu = () => this.props.dispatch(hideMenu())
 
-const Sidebar = ({ path, lang }) => (
-  <Nav>
-    <Header>
-      <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
-        <a>
-          <img className="logo"  src="/static/images/logo_header.png"/>
-        </a>
-      </Link>
-      <div className="banners">
-        <a className="github" target="\_blank" href="https://github.com/fand/veda">
-          <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/>
-        </a>
-        <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">
-          <img alt="hashtag #vedajs" src="/static/images/hashtag.png"/>
-        </a>
+  Li = ({ to, children }) => {
+    const { path } = this.props;
+    if (isActive(path, to)) {
+      return (
+        <div onClick={this.hideMenu}>
+          <li className="active">
+            {children}
+          </li>
+        </div>
+      );
+    }
+    return (
+      <div onClick={this.hideMenu}>
+        <li>
+          <Link href={to}><a>{children}</a></Link>
+        </li>
       </div>
-    </Header>
+    );
+  }
 
-    <li>VEDA for Atom</li>
-    {lang === 'en' &&
-      <ul style={{ textIndent: '20px' }}>
-        <Li path={path} to="/install">
-          Install
-        </Li>
-        <Li path={path} to="/usage">
-          Usage
-        </Li>
-        <Li path={path} to="/settings">
-          Settings
-        </Li>
-        <Li path={path} to="/features">
-          Features
-        </Li>
-        <ul style={{ textIndent: '40px' }}>
-          <Li path={path} to="/features/image">Images & Videos</Li>
-          <Li path={path} to="/features/audio">Audio</Li>
-          <Li path={path} to="/features/midi">MIDI</Li>
-          <Li path={path} to="/features/osc">OSC</Li>
-          <Li path={path} to="/features/webcam">WebCam</Li>
-          <Li path={path} to="/features/keyboard">Keyboard</Li>
-          <Li path={path} to="/features/gamepad">Gamepad</Li>
-        </ul>
-      </ul>
-    }
-    {lang === 'ja' &&
-      <ul style={{ textIndent: '20px' }}>
-        <Li path={path} to="/install?lang=ja">
-          インストール
-        </Li>
-        <Li path={path} to="/usage?lang=ja">
-          操作方法
-        </Li>
-        <Li path={path} to="/settings?lang=ja">
-          設定
-        </Li>
-        <Li path={path} to="/features?lang=ja">
-          機能一覧
-        </Li>
-        <ul style={{ textIndent: '40px' }}>
-          <Li path={path} to="/features/image?lang=ja">画像/動画</Li>
-          <Li path={path} to="/features/audio?lang=ja">音声入力</Li>
-          <Li path={path} to="/features/midi?lang=ja">MIDI入力</Li>
-          <Li path={path} to="/features/osc?lang=ja">OSC</Li>
-          <Li path={path} to="/features/webcam?lang=ja">Webカメラ</Li>
-          <Li path={path} to="/features/keyboard?lang=ja">キーボード</Li>
-          <Li path={path} to="/features/gamepad?lang=ja">ゲームパッド</Li>
-        </ul>
-      </ul>
-    }
-    <Li path={path} to="/vedajs">VEDA.js</Li>
-    <Li path={path} to="/faq">FAQ</Li>
-    <Li path={path} to="/contributing">CONTRIBUTING</Li>
-  </Nav>
-);
+  render() {
+    const { lang } = this.props;
+    const Li = this.Li;
+
+    return (
+      <Nav>
+        <Header>
+          <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
+            <a>
+              <img className="logo" src="/static/images/logo_header.png"/>
+            </a>
+          </Link>
+          <div className="banners">
+            <a className="github" target="\_blank" href="https://github.com/fand/veda">
+              <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/>
+            </a>
+            <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">
+              <img alt="hashtag #vedajs" src="/static/images/hashtag.png"/>
+            </a>
+          </div>
+        </Header>
+
+        {lang === 'en' &&
+          <ul>
+            <li>VEDA for Atom</li>
+            <ul style={{ textIndent: '20px' }}>
+              <Li to="/install">Install</Li>
+              <Li to="/usage">Usage</Li>
+              <Li to="/settings">Settings</Li>
+              <Li to="/features">Features</Li>
+              <ul style={{ textIndent: '40px' }}>
+                <Li to="/features/image">Images & Videos</Li>
+                <Li to="/features/audio">Audio</Li>
+                <Li to="/features/midi">MIDI</Li>
+                <Li to="/features/osc">OSC</Li>
+                <Li to="/features/webcam">WebCam</Li>
+                <Li to="/features/keyboard">Keyboard</Li>
+                <Li to="/features/gamepad">Gamepad</Li>
+              </ul>
+            </ul>
+            <Li to="/vedajs">VEDA.js</Li>
+            <Li to="/faq">FAQ</Li>
+            <Li to="/contributing">CONTRIBUTING</Li>
+          </ul>
+        }
+        {lang === 'ja' &&
+          <ul>
+            <ul style={{ textIndent: '20px' }}>
+              <Li to="/install?lang=ja">インストール</Li>
+              <Li to="/usage?lang=ja">操作方法</Li>
+              <Li to="/settings?lang=ja">設定</Li>
+              <Li to="/features?lang=ja">機能一覧</Li>
+              <ul style={{ textIndent: '40px' }}>
+                <Li to="/features/image?lang=ja">画像/動画</Li>
+                <Li to="/features/audio?lang=ja">音声入力</Li>
+                <Li to="/features/midi?lang=ja">MIDI入力</Li>
+                <Li to="/features/osc?lang=ja">OSC</Li>
+                <Li to="/features/webcam?lang=ja">Webカメラ</Li>
+                <Li to="/features/keyboard?lang=ja">キーボード</Li>
+                <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
+              </ul>
+            </ul>
+            <Li to="/vedajs?lang=ja">VEDA.js</Li>
+            <Li to="/faq?lang=ja">FAQ</Li>
+            <Li to="/contributing?lang=ja">CONTRIBUTING</Li>
+          </ul>
+        }
+      </Nav>
+    );
+  }
+}
 
 export default connect(s => s)(Sidebar);

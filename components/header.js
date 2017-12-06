@@ -1,9 +1,7 @@
 import React from 'react';
-import A from './a';
 import styled from 'styled-components';
 import Link from 'next/link';
 import constants from './constants';
-import { throttle } from 'lodash';
 import { toggleMenu, setLanguage } from '../actions';
 import { connect } from 'react-redux';
 
@@ -125,7 +123,7 @@ const Button = styled.div`
       border-bottom: 15px solid black;
     }
   }
-`
+`;
 
 class Header extends React.Component {
   state = {

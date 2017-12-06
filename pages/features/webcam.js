@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './webcam.md';
@@ -7,7 +8,8 @@ import webcamShader from './webcam.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
-  <Article path="/features/webcam"
+  <Article
+    path="/features/webcam"
     article={{
       en: parse(en),
       ja: parse(ja),
@@ -16,15 +18,16 @@ export default withReduxSaga(() => (
       attach(veda) {
         veda.loadFragmentShader(defaultShader);
         window.addEventListener('click', e => {
-          if (e.target.id === 'enable')  {
+          if (e.target.id === 'enable') {
             veda.setPixelRatio(4);
             veda.toggleCamera(true);
-            veda.loadFragmentShader(shader);
+            veda.loadFragmentShader(webcamShader);
           }
         });
       },
       detach(veda) {
         veda.toggleCamera(false);
       },
-    }}/>
+    }}
+  />
 ));

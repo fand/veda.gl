@@ -8,7 +8,7 @@ import frag from './shader.frag';
 const DEFAULT_SHADER = {
   attach(veda) {
     veda.loadFragmentShader(frag);
-  }
+  },
 };
 
 const CanvasWrapper = styled.div`
@@ -46,7 +46,9 @@ class Shader extends React.Component {
         frameskip: 5,
       });
       this.veda.setCanvas(this.canvas);
-      shader.attach && shader.attach(this.veda);
+      if (shader.attach) {
+        shader.attach(this.veda);
+      }
       this.veda.play();
       window.addEventListener('resize', this.resize);
     }, 0);
@@ -55,7 +57,9 @@ class Shader extends React.Component {
   componentWillUnmount() {
     const shader = this.getShader();
     this.veda.stop();
-    shader.detach && shader.detach(this.veda);
+    if (shader.detach) {
+      shader.detach(this.veda);
+    }
     window.removeEventListener('resize', this.resize);
   }
 

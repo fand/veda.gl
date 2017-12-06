@@ -1,3 +1,4 @@
+import React from 'react';
 import Article from '../../components/article';
 import parse from '../parse';
 import md from './video.md';
@@ -5,7 +6,8 @@ import shader from './video.frag';
 import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
-  <Article path="/features/video"
+  <Article
+    path="/features/video"
     article={{
       en: parse(md),
     }}
@@ -21,5 +23,6 @@ export default withReduxSaga(() => (
         veda.unloadTexture('video2', '/static/videos/2.mp4');
         veda.unloadTexture('video3', '/static/videos/3.mp4');
       },
-    }}/>
+    }}
+  />
 ));
