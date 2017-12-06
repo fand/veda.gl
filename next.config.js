@@ -55,6 +55,8 @@ module.exports = {
       '/features/webcam': { page: '/features/webcam' },
       '/features/gamepad': { page: '/features/gamepad' },
       '/vedajs': { page: '/vedajs' },
+      '/faq': { page: '/faq' },
+      '/contributing': { page: '/contributing' },
     };
   },
 };
