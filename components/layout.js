@@ -90,7 +90,7 @@ class Layout extends React.Component {
   }, 100)
 
   url() {
-    return `http://veda.gl${this.props.path}`;
+    return `https://veda.gl${this.props.path}`;
   }
 
   siteName() {

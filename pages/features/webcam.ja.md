@@ -3,19 +3,20 @@ title: Webカメラ
 ---
 # Webカメラ
 
-<!-- <p class="pc-only">以下のボタンを押すと、Webカメラを用いたGLSL表現のサンプルが再生されます。
+<p class="pc-only">以下のボタンを押すと、Webカメラを用いたGLSL表現のサンプルが再生されます。
 
 <button id="enable">Webカメラの使用を許可する</button>
 
-</p> -->
+</p>
 
 VEDAでは、Webカメラからの入力をテクスチャとして利用できます。
 Settingsで `"camera": true` とすると、 `sampler2D camera` が利用できるようになります。
 
 
-<!-- ## 例
+## 例
 
 以下はこのページをPCで開いた時に実行されるGLSLコードです。
+VEDAでそのまま実行できるので、ぜひお試しください！
 
 ```glsl
 /*{ "camera": true }*/
@@ -32,6 +33,6 @@ void main() {
     float s = mod(a + time * .07, .13) + mod(a - time * .08, .17);
     gl_FragColor = texture2D(camera, uv + s * .1) * vec4(.2, .4, .8, 1.);
 }
-``` -->
+```
 
 他のコード例は [examples](https://github.com/fand/veda/blob/master/examples/camera.frag) を見てください。

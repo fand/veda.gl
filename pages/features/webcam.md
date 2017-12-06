@@ -3,17 +3,17 @@ title: WebCam Input
 ---
 # WebCam Input
 
-<!-- <p class="pc-only">Click this button to see an example of GLSL using WebCam.
+<p class="pc-only">Click this button to see an example of GLSL using WebCam.
 
 <button id="enable">Allow GLSL to use WebCam inputs</button>
 
-</p> -->
+</p>
 
 VEDA supports WebCam input.
 When you add `"camera": true` to settings, VEDA enables `sampler2D camera`.
 
 
-<!-- ## Example
+## Example
 
 This is the code running on this page (PC only).
 
@@ -32,6 +32,6 @@ void main() {
     float s = mod(a + time * .07, .13) + mod(a - time * .08, .17);
     gl_FragColor = texture2D(camera, uv + s * .1) * vec4(.2, .4, .8, 1.);
 }
-``` -->
+```
 
 See [examples](https://github.com/fand/veda/blob/master/examples/camera.frag) for another example.

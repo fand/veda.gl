@@ -3,11 +3,11 @@ title: Audio Input
 ---
 # Audio Input
 
-<!-- <p class="pc-only">Click this button to see an example of GLSL using audio inputs.
+<p class="pc-only">Click this button to see an example of GLSL using audio inputs.
 
 <button id="enable">Allow GLSL to use audio inputs</button>
 
-</p> -->
+</p>
 
 VEDA supports audio input.
 When you set `audio: true` in [Settings](/settings), VEDA enables following uniform variables:
@@ -27,7 +27,7 @@ This is useful to draw the volume of specific frequency band, such as spectrum v
 
 See [examples](https://github.com/fand/veda/blob/master/examples/audio.frag) for more details.
 
-<!-- ## Example
+## Example
 
 This is the code running on this page (PC only).
 
@@ -62,4 +62,4 @@ void main() {
     1.
   ) + texture2D(backbuffer, uv)*.8;
 }
-``` -->
+```
