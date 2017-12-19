@@ -12,7 +12,7 @@
   "author": "fand <fand.gmork@gmail.com> (https://gmork.in/)",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-xo-react": "^0.14.0",
+    "eslint-config-xo-react": "^0.15.0",
     "eslint-plugin-react": "^7.5.1",
     "frontmatter": "^0.0.3",
     "highlight.js": "^9.12.0",
@@ -29,7 +29,7 @@
     "redux-saga": "^0.16.0",
     "styled-components": "^2.2.3",
     "url-parse": "^1.2.0",
-    "vedajs": "^0.3.3"
+    "vedajs": "^0.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
