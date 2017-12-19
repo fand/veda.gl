@@ -1,4 +1,4 @@
-const MinifyPlugin = require("babel-minify-webpack-plugin");
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
   webpack(config) {
@@ -47,12 +47,13 @@ module.exports = {
       '/': { page: '/' },
       '/install': { page: '/install' },
       '/settings': { page: '/settings' },
-      '/features/index': { page: '/features/index' },
+      '/features/': { page: '/features/index' },
+      '/features/image': { page: '/features/image' },
       '/features/audio': { page: '/features/audio' },
-      '/features/video': { page: '/features/video' },
-      '/features/osc': { page: '/features/osc' },
       '/features/midi': { page: '/features/midi' },
+      '/features/osc': { page: '/features/osc' },
       '/features/webcam': { page: '/features/webcam' },
+      '/features/keyboard': { page: '/features/keyboard' },
       '/features/gamepad': { page: '/features/gamepad' },
       '/vedajs': { page: '/vedajs' },
       '/faq': { page: '/faq' },
