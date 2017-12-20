@@ -146,9 +146,9 @@ class Header extends React.Component {
   }
 
   toggleShare = () => {
-    this.setState({
-      share: !this.state.share,
-    });
+    this.setState(prevState => ({
+      share: !prevState.share,
+    }));
   }
 
   render() {

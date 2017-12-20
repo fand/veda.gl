@@ -22,5 +22,7 @@
     "react/prop-types": 0,
     "react/forbid-component-props": 0,
     "react/no-danger": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-one-expression-per-line": 0,
   }
 }
