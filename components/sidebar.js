@@ -147,6 +147,7 @@ class Sidebar extends React.PureComponent {
         }
         {lang === 'ja' &&
           <ul>
+            <li>VEDA for Atom</li>
             <ul style={{ textIndent: '20px' }}>
               <Li to="/install?lang=ja">インストール</Li>
               <Li to="/usage?lang=ja">操作方法</Li>
