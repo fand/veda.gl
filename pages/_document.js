@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import Helmet from 'react-helmet';
 import { ServerStyleSheet } from 'styled-components';
+import constants from '../components/constants';
 
 export default class extends Document {
   static async getInitialProps(...args) {
@@ -29,10 +30,11 @@ export default class extends Document {
     return (
       <Helmet
         htmlAttributes={{ lang: 'en' }}
-        title="VEDA.js - Shader Art Framework"
+        title={constants.og.title}
         meta={[
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { property: 'og:title', content: 'VEDA.js - Shader Art Framework' },
+          { property: 'og:title', content: constants.og.title },
+          { property: 'og:descripton', content: constants.og.descripton },
         ]}
       />
     );

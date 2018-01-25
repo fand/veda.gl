@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="logo" src="https://user-images.githubusercontent.com/1403842/28923702-d8155d46-7899-11e7-817b-1193d138e5b8.png" width="192"/>
+  <img alt="logo" src="/static/images/logo_720h.png" width="192"/>
   <h1>VEDA</h1><i>VJ system on Atom</i>
   <br/>
 </div>
@@ -9,7 +9,7 @@
 
 VEDA is an Atom package for VJ / Livecoding with GLSL.
 
-![](https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif)
+<video src="/static/videos/veda.mp4" autoplay loop/>
 
 
 ### Easy GLSL runtime

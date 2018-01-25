@@ -9,16 +9,6 @@ import Header from './header';
 import Meta from './meta';
 import Shader from './shader';
 
-const DEFAULT = {
-  title: `VEDA - VJ system on Atom #VEDAJS #GLSL`,
-  description: `
-VEDA is a GLSL runtime environment for Atom.
-It's just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!
-  `.trim(),
-  image: '/static/images/logo_720h.png',
-};
-
 const Wrapper = styled.div`
   position: fixed;
   top: 0;
@@ -93,19 +83,20 @@ class Layout extends React.Component {
   }
 
   siteName() {
-    return DEFAULT.title;
+    return constants.og.title;
   }
 
   title() {
-    return this.props.article.title || DEFAULT.title;
+    const article = this.props.article[this.props.lang] || this.props.article.en;
+    return (article.title ? article.title + ' | ' : '') + constants.og.title;
   }
 
   description() {
-    return this.props.article.description || DEFAULT.description;
+    return this.props.article.description || constants.og.description;
   }
 
   image() {
-    return this.props.article.image || DEFAULT.image;
+    return this.props.article.image || constants.og.image;
   }
 
   setBody = el => {
@@ -114,16 +105,15 @@ class Layout extends React.Component {
 
   render() {
     const sc = this.props.isMenuVisible ? 'menu' : '';
-    const article = this.props.article[this.props.lang] || this.props.article.en;
-    const title = (article.title ? article.title + ' | ' : '') + DEFAULT.title;
+
     return (
       <div>
         <Meta
           url={this.url()}
-          title={title}
-          image={DEFAULT.image}
-          description={DEFAULT.description}
-          siteName={DEFAULT.title}
+          title={this.title()}
+          image={this.image()}
+          description={this.description()}
+          siteName={constants.og.title}
         />
         <Wrapper className={sc}>
           <SidebarWrapper className={sc}>
@@ -131,7 +121,7 @@ class Layout extends React.Component {
           </SidebarWrapper>
           <BodyColumn>
             <HeaderWrapper>
-              <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={title}/>
+              <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={this.title()}/>
             </HeaderWrapper>
             <MainWrapper className="body" innerRef={this.setBody}>
               {this.props.children}
