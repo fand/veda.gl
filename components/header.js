@@ -26,9 +26,6 @@ const Nav = styled.div`
       display: none;
     }
   }
-  .none {
-    display: none;
-  }
 `;
 
 const Logo = styled.div`
@@ -180,26 +177,6 @@ class Header extends React.Component {
               }
             </Button>
           }
-          <Button className="none" onClick={this.toggleShare}>
-            <img src="/static/images/i_share.png"/>
-            <div className={'inner' + (this.state.share ? ' visible' : '')}>
-              <div>
-                <a target="_blank" href={`https://twitter.com/intent/tweet?url=${url}&text=${title}`}>
-                  <i className="fa fa-twitter"/>Twitter
-                </a>
-              </div>
-              <div>
-                <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}>
-                  <i className="fa fa-facebook"/>Facebook
-                </a>
-              </div>
-              <div>
-                <a target="_blank" href={`http://service.weibo.com/share/share.php?url=${url}&title=${title}`}>
-                  <i className="fa fa-weibo"/>Weibo
-                </a>
-              </div>
-            </div>
-          </Button>
         </Right>
       </Nav>
     );

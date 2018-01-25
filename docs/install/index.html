@@ -1,4 +1,593 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/fa92e203-8056-4d68-b95d-a7e7ed69e11f/page/install.js" as="script"/><link rel="preload" href="/_next/fa92e203-8056-4d68-b95d-a7e7ed69e11f/page/_error.js" as="script"/><link rel="preload" href="/_next/761754b3e3d7b0cd5830fad8301327db/app.js" as="script"/><style id="__jsx-3568086947">body{margin:0;padding:0;background:#282c34;color:#FFFFFF;font-family:monospace;font-size:16px;line-height:1.8em;font-family:"Open Sans",sans-serif;font-weight:400;text-rendering:auto;text-shadow:0 0 2px black;-webkit-font-smoothing:antialiased;}
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/install.js" as="script"/><link rel="preload" href="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/_error.js" as="script"/><link rel="preload" href="/_next/f1c62c0dd9501157dabf86b3bcf1efa1/app.js" as="script"/><style id="__jsx-undefined">/*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
+
+/* Document (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
+   ========================================================================== */
+
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add box sizing inheritence in all browsers (opinionated).
+ */
+
+*,
+::before,
+::after {
+	background-repeat: no-repeat; /* 1 */
+	box-sizing: inherit; /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritence in all browsers (opinionated).
+ */
+
+::before,
+::after {
+	text-decoration: inherit; /* 1 */
+	vertical-align: inherit; /* 2 */
+}
+
+/**
+ * 1. Add border box sizing in all browsers (opinionated).
+ * 2. Add the default cursor in all browsers (opinionated).
+ * 3. Prevent font size adjustments after orientation changes in IE and iOS.
+ */
+
+html {
+	box-sizing: border-box; /* 1 */
+	cursor: default; /* 2 */
+	-ms-text-size-adjust: 100%; /* 3 */
+	-webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections (https://html.spec.whatwg.org/multipage/semantics.html#sections)
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+
+/* Grouping content (https://html.spec.whatwg.org/multipage/semantics.html#grouping-content)
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+
+nav ol,
+nav ul {
+	list-style: none;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics (https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics)
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+	background-color: transparent; /* 1 */
+	-webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+	background-color: #ffff00;
+	color: #000000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+sup {
+	top: -.5em;
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::-moz-selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+
+/* Embedded content (https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+   ========================================================================== */
+
+/*
+ * Change the alignment on media elements in all browers (opinionated).
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+	border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+
+svg {
+	fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Tabular data (https://html.spec.whatwg.org/multipage/tables.html#tables)
+   ========================================================================== */
+
+/**
+ * Collapse border spacing
+ */
+
+table {
+	border-collapse: collapse;
+}
+
+/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
+   ========================================================================== */
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+}
+
+/**
+ * Inherit styling in all browsers (opinionated).
+ */
+
+button,
+input,
+select,
+textarea {
+	background-color: transparent;
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+ * 1. Remove the default vertical scrollbar in IE.
+ * 2. Change the resize direction on textareas in all browsers (opinionated).
+ */
+
+textarea {
+	overflow: auto; /* 1 */
+	resize: vertical; /* 2 */
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive elements (https://html.spec.whatwg.org/multipage/forms.html#interactive-elements)
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Scripting (https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+	display: none;
+}
+
+/* User interaction (https://html.spec.whatwg.org/multipage/interaction.html#editing)
+   ========================================================================== */
+
+/*
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation; /* 1 */
+	touch-action: manipulation;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/* ARIA (https://w3c.github.io/html-aria/)
+   ========================================================================== */
+
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements (opinionated).
+ */
+
+[aria-controls] {
+	cursor: pointer;
+}
+
+/*
+ * Change the display on visually hidden accessible elements (opinionated).
+ */
+
+[aria-hidden="false"][hidden]:not(:focus) {
+	clip: rect(0, 0, 0, 0);
+	display: inherit;
+	position: absolute;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements (opinionated).
+ */
+
+[aria-disabled] {
+	cursor: default;
+}
+</style><style id="__jsx-3568086947">body{margin:0;padding:0;background:#282c34;color:#FFFFFF;font-family:monospace;font-size:16px;line-height:1.8em;font-family:"Open Sans",sans-serif;font-weight:400;text-rendering:auto;text-shadow:0 0 2px black;-webkit-font-smoothing:antialiased;}
 pre{padding:10px;background:#000;font-family:monospace;overflow:scroll;}
 article img{max-width:100%;}
 a,a:visited,a:hover{color:#88eeff;font-weight:normal;}
@@ -18,11 +607,11 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 .pc-only{font-style:italic;}
 .pc-only button{cursor:pointer;}
 @media (mac-width:767px){.pc-only{display:none;}}</style><style id="__jsx-3463228773">article.jsx-3463228773{width:90%;max-width:680px;margin:20px auto 120px;padding:0;overflow:hidden;}
-@media (max-width:767px){article.jsx-3463228773{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-3568086947"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-3568086947"/><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" class="jsx-3568086947"/><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" class="jsx-3568086947"/><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-3568086947"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-3568086947"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/install" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:title" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
+@media (max-width:767px){article.jsx-3463228773{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-3568086947"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-3568086947"/><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-3568086947"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-3568086947"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/install" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:title" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
   Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:site_name" content="VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:locale" content="en_US" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:card" content="summary" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:site" content="@amagitakayosi" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:creator" content="@amagitakayosi" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:url" content="https://veda.gl/install" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:title" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="name" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="description" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-3568086947"/><title data-react-helmet="true" class="jsx-3568086947">Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style type="text/css" data-styled-components="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz iXXkDm foianw hqfmhS ezeMFs hYIZGZ eYewVt cSNhIq iCcgCC" data-styled-components-is-local="true">/* sc-component-id: sidebar__Nav-s1mu56oo-0 */
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="name" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="description" content="Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-3568086947"/><title data-react-helmet="true" class="jsx-3568086947">Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style type="text/css" data-styled-components="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz kcQdHk foianw hqfmhS ezeMFs hYIZGZ eYewVt cSNhIq iCcgCC" data-styled-components-is-local="true">/* sc-component-id: sidebar__Nav-s1mu56oo-0 */
 
 .jegVTl{width:100%;height:100%;padding:10px 20px 100px;background:rgba(10,10,10,0.6);border-right:1px solid rgb(24,26,31);text-shadow:0 2px 5px black;overflow:auto;}.jegVTl *{font-weight:400;}.jegVTl h4{margin:1em 0 0;font-weight:700;}.jegVTl ul{padding-left:0;margin:0;}.jegVTl li{display:block;width:100%;line-height:2.5em;}.jegVTl li.active{box-shadow:-200px 0 0 black,200px 0 0 black;background:black;}.jegVTl li.active *{font-weight:700;}.jegVTl li a{display:block;text-decoration:none;color:#FFFFFF;}.jegVTl li a:hover{color:#88eeff;text-decoration:underline;}.jegVTl li a:visited{color:#FFFFFF;}
 /* sc-component-id: sidebar__Header-s1mu56oo-1 */
@@ -30,7 +619,7 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 .PwCm{margin-bottom:30px;}.PwCm .logo{width:100%;padding:5px 10px;margin-left:-10px;}.PwCm .logo a{display:block;}.PwCm .banners{width:180px;margin:20px auto;-webkit-transform:translateX(-5px);-ms-transform:translateX(-5px);transform:translateX(-5px);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.PwCm .banners img{height:20px;}
 /* sc-component-id: header__Nav-hd5umw-0 */
 
-.iXXkDm{position:relative;width:100%;height:56px;line-height:56px;-webkit-transition:0.5s;transition:0.5s;background:transparent;}.iXXkDm .mobile{display:none;}@media (max-width:767px){.iXXkDm.visible{background:linear-gradient(to bottom,rgba(0,0,30,1),rgba(0,0,30,0.5));}.iXXkDm .mobile{display:block;}.iXXkDm .pc{display:none;}}.iXXkDm .none{display:none;}
+.kcQdHk{position:relative;width:100%;height:56px;line-height:56px;-webkit-transition:0.5s;transition:0.5s;background:transparent;}.kcQdHk .mobile{display:none;}@media (max-width:767px){.kcQdHk.visible{background:linear-gradient(to bottom,rgba(0,0,30,1),rgba(0,0,30,0.5));}.kcQdHk .mobile{display:block;}.kcQdHk .pc{display:none;}}
 /* sc-component-id: header__Logo-hd5umw-1 */
 
 .foianw{height:100%;padding:4px 0;position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);opacity:0;}@media (max-width:767px){.foianw{-webkit-transition:opacity 1s;transition:opacity 1s;}.foianw.visible{opacity:1;}}.foianw a,.foianw img{display:block;height:100%;text-decoration:none;}.foianw img{margin-left:-10px;}
@@ -64,7 +653,7 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 /* sc-component-id: layout__HeaderWrapper-s1r8im8e-4 */
 
 .diPhsz{position:absolute;top:0;width:100%;z-index:2;}
-</style></head><body><div><div id="__next"><div data-reactroot=""><div><div class="jsx-3568086947"><script async="" src="https://use.fontawesome.com/9f93baf7cc.js" class="jsx-3568086947"></script><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-3568086947"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><ul style="text-indent:20px"><div><li class="active">Install</li></div><div><li><a href="/usage/">Usage</a></li></div><div><li><a href="/settings/">Settings</a></li></div><div><li><a href="/features/">Features</a></li></div><ul style="text-indent:40px"><div><li><a href="/features/image/">Images &amp; Videos</a></li></div><div><li><a href="/features/audio/">Audio</a></li></div><div><li><a href="/features/midi/">MIDI</a></li></div><div><li><a href="/features/osc/">OSC</a></li></div><div><li><a href="/features/webcam/">WebCam</a></li></div><div><li><a href="/features/keyboard/">Keyboard</a></li></div><div><li><a href="/features/gamepad/">Gamepad</a></li></div></ul></ul><div><li><a href="/vedajs/">VEDA.js</a></li></div><div><li><a href="/faq/">FAQ</a></li></div><div><li><a href="/contributing/">CONTRIBUTING</a></li></div></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 iXXkDm"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div><div class="none header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_share.png"/><div class="inner"><div><a target="_blank" href="https://twitter.com/intent/tweet?url=https://veda.gl/install&amp;text=Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL"><i class="fa fa-twitter"></i>Twitter</a></div><div><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://veda.gl/install"><i class="fa fa-facebook"></i>Facebook</a></div><div><a target="_blank" href="http://service.weibo.com/share/share.php?url=https://veda.gl/install&amp;title=Install VEDA | VEDA - VJ app for Atom #VEDAJS #GLSL"><i class="fa fa-weibo"></i>Weibo</a></div></div></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3463228773"><h1 id="install-veda">Install VEDA</h1>
+</style></head><body><div><div id="__next"><div data-reactroot=""><div><div class="jsx-3568086947"><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-3568086947"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><ul style="text-indent:20px"><div><li class="active">Install</li></div><div><li><a href="/usage/">Usage</a></li></div><div><li><a href="/settings/">Settings</a></li></div><div><li><a href="/features/">Features</a></li></div><ul style="text-indent:40px"><div><li><a href="/features/image/">Images &amp; Videos</a></li></div><div><li><a href="/features/audio/">Audio</a></li></div><div><li><a href="/features/midi/">MIDI</a></li></div><div><li><a href="/features/osc/">OSC</a></li></div><div><li><a href="/features/webcam/">WebCam</a></li></div><div><li><a href="/features/keyboard/">Keyboard</a></li></div><div><li><a href="/features/gamepad/">Gamepad</a></li></div></ul></ul><div><li><a href="/vedajs/">VEDA.js</a></li></div><div><li><a href="/faq/">FAQ</a></li></div><div><li><a href="/contributing/">CONTRIBUTING</a></li></div></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 kcQdHk"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3463228773"><h1 id="install-veda">Install VEDA</h1>
 <p>Let your editor blink!</p>
 <p><img src="https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif" alt=""></p>
 <div align="center" style="line-height: 40px;"><img src="https://img.shields.io/github/stars/fand/veda.svg?style=social" alt="GitHub stars"><br><img src="https://img.shields.io/travis/fand/veda.svg" alt="TravisCI"> <img src="https://img.shields.io/apm/dm/veda.svg" alt="license MIT"> <img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="XO code style"><br></div>
@@ -96,7 +685,7 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 <hr>
 <p>Now VEDA is ready for you!<br>Read <a href="/usage">USAGE</a> to learn how to use it.</p>
 </article></main></div></div><div class="shader__CanvasWrapper-eh1isw-0 cSNhIq"><canvas class="shader__Canvas-eh1isw-1 iCcgCC"></canvas></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{"isServer":true,"store":{"sagaTask":{"@@redux-saga/TASK":true,"id":3,"name":"rootSaga","joiners":null,"done":{}}},"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false}},"pathname":"/install","query":{},"buildId":"fa92e203-8056-4d68-b95d-a7e7ed69e11f","buildStats":{"app.js":{"hash":"761754b3e3d7b0cd5830fad8301327db"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+          __NEXT_DATA__ = {"props":{"isServer":true,"store":{"sagaTask":{"@@redux-saga/TASK":true,"id":3,"name":"rootSaga","joiners":null,"done":{}}},"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false}},"pathname":"/install","query":{},"buildId":"5ecc0632-98b5-4f8f-a7c7-bb41928c209c","buildStats":{"app.js":{"hash":"f1c62c0dd9501157dabf86b3bcf1efa1"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -108,4 +697,4 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/install" type="text/javascript" src="/_next/fa92e203-8056-4d68-b95d-a7e7ed69e11f/page/install.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/fa92e203-8056-4d68-b95d-a7e7ed69e11f/page/_error.js"></script><div></div><script type="text/javascript" src="/_next/761754b3e3d7b0cd5830fad8301327db/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/install" type="text/javascript" src="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/install.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/_error.js"></script><div></div><script type="text/javascript" src="/_next/f1c62c0dd9501157dabf86b3bcf1efa1/app.js" async=""></script></div></body></html>

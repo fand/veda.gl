@@ -44,7 +44,6 @@ export default ({ url, title, image, description, siteName }) => (
       <meta name="theme-color" content="#ffffff"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/>
     </Helmet>
-    <script async src="https://use.fontawesome.com/9f93baf7cc.js"/>
     <script async src="https://platform.twitter.com/widgets.js"/>
     <style global jsx>{sanitize}</style>
     <style global jsx>{openSans}</style>
