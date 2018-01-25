@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import constants from './constants';
+import sanitize from 'sanitize.css';
+import openSans from './open-sans.css';
 
 export default ({ url, title, image, description, siteName }) => (
   <div>
@@ -40,13 +42,12 @@ export default ({ url, title, image, description, siteName }) => (
       <link rel="manifest" href="/static/favicons/manifest.json"/>
       <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
       <meta name="theme-color" content="#ffffff"/>
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600"/>
     </Helmet>
     <script async src="https://use.fontawesome.com/9f93baf7cc.js"/>
     <script async src="https://platform.twitter.com/widgets.js"/>
+    <style global jsx>{sanitize}</style>
+    <style global jsx>{openSans}</style>
     <style global jsx>{`
       body {
         margin: 0;
