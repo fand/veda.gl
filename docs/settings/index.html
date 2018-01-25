@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/settings.js" as="script"/><link rel="preload" href="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/_error.js" as="script"/><link rel="preload" href="/_next/f1c62c0dd9501157dabf86b3bcf1efa1/app.js" as="script"/><style id="__jsx-undefined">/*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/ebc348cf-ac49-464c-8f8d-054454b3ae30/page/settings.js" as="script"/><link rel="preload" href="/_next/ebc348cf-ac49-464c-8f8d-054454b3ae30/page/_error.js" as="script"/><link rel="preload" href="/_next/09def46fc38c406746c033386e128b9f/app.js" as="script"/><style id="__jsx-2358421718">/*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
 
 /* Document (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
    ========================================================================== */
@@ -587,7 +587,155 @@ textarea,
 [aria-disabled] {
 	cursor: default;
 }
-</style><style id="__jsx-3568086947">body{margin:0;padding:0;background:#282c34;color:#FFFFFF;font-family:monospace;font-size:16px;line-height:1.8em;font-family:"Open Sans",sans-serif;font-weight:400;text-rendering:auto;text-shadow:0 0 2px black;-webkit-font-smoothing:antialiased;}
+ /* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/static/fonts/open-sans-v15-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('/static/fonts/open-sans-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/static/fonts/open-sans-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/static/fonts/open-sans-v15-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-300italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/static/fonts/open-sans-v15-latin-300italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'),
+       url('/static/fonts/open-sans-v15-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/static/fonts/open-sans-v15-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-300italic.woff') format('woff'), /* Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/static/fonts/open-sans-v15-latin-300italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/fonts/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/static/fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/static/fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/static/fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/static/fonts/open-sans-v15-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('/static/fonts/open-sans-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/static/fonts/open-sans-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('/static/fonts/open-sans-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/static/fonts/open-sans-v15-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+ /*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+ body{margin:0;padding:0;background:#282c34;color:#FFFFFF;font-family:monospace;font-size:16px;line-height:1.8em;font-family:"Open Sans",sans-serif;font-weight:400;text-rendering:auto;text-shadow:0 0 2px black;-webkit-font-smoothing:antialiased;}
 pre{padding:10px;background:#000;font-family:monospace;overflow:scroll;}
 article img{max-width:100%;}
 a,a:visited,a:hover{color:#88eeff;font-weight:normal;}
@@ -607,11 +755,11 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 .pc-only{font-style:italic;}
 .pc-only button{cursor:pointer;}
 @media (mac-width:767px){.pc-only{display:none;}}</style><style id="__jsx-3463228773">article.jsx-3463228773{width:90%;max-width:680px;margin:20px auto 120px;padding:0;overflow:hidden;}
-@media (max-width:767px){article.jsx-3463228773{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-3568086947"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-3568086947"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-3568086947"/><link data-react-helmet="true" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-3568086947"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-3568086947"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/settings" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:title" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
+@media (max-width:767px){article.jsx-3463228773{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-2358421718"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-2358421718"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-2358421718"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-2358421718"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-2358421718"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-2358421718"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/settings" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:title" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:site_name" content="VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" property="og:locale" content="en_US" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:card" content="summary" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:site" content="@amagitakayosi" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:creator" content="@amagitakayosi" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:url" content="https://veda.gl/settings" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:title" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:description" content="VEDA is a GLSL runtime environment for Atom.
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:site_name" content="VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2358421718"/><meta data-react-helmet="true" property="og:locale" content="en_US" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:card" content="summary" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:site" content="@amagitakayosi" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:creator" content="@amagitakayosi" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:url" content="https://veda.gl/settings" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:title" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3568086947"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="name" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="description" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3568086947"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-3568086947"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-3568086947"/><title data-react-helmet="true" class="jsx-3568086947">Settings | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style type="text/css" data-styled-components="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz kcQdHk foianw hqfmhS ezeMFs hYIZGZ eYewVt cSNhIq iCcgCC" data-styled-components-is-local="true">/* sc-component-id: sidebar__Nav-s1mu56oo-0 */
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-2358421718"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-2358421718"/><meta data-react-helmet="true" itemProp="name" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2358421718"/><meta data-react-helmet="true" itemProp="description" content="Settings | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2358421718"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-2358421718"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-2358421718"/><title data-react-helmet="true" class="jsx-2358421718">Settings | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style type="text/css" data-styled-components="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz kcQdHk foianw hqfmhS ezeMFs hYIZGZ eYewVt cSNhIq iCcgCC" data-styled-components-is-local="true">/* sc-component-id: sidebar__Nav-s1mu56oo-0 */
 
 .jegVTl{width:100%;height:100%;padding:10px 20px 100px;background:rgba(10,10,10,0.6);border-right:1px solid rgb(24,26,31);text-shadow:0 2px 5px black;overflow:auto;}.jegVTl *{font-weight:400;}.jegVTl h4{margin:1em 0 0;font-weight:700;}.jegVTl ul{padding-left:0;margin:0;}.jegVTl li{display:block;width:100%;line-height:2.5em;}.jegVTl li.active{box-shadow:-200px 0 0 black,200px 0 0 black;background:black;}.jegVTl li.active *{font-weight:700;}.jegVTl li a{display:block;text-decoration:none;color:#FFFFFF;}.jegVTl li a:hover{color:#88eeff;text-decoration:underline;}.jegVTl li a:visited{color:#FFFFFF;}
 /* sc-component-id: sidebar__Header-s1mu56oo-1 */
@@ -653,7 +801,7 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 /* sc-component-id: layout__HeaderWrapper-s1r8im8e-4 */
 
 .diPhsz{position:absolute;top:0;width:100%;z-index:2;}
-</style></head><body><div><div id="__next"><div data-reactroot=""><div><div class="jsx-3568086947"><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-3568086947"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><ul style="text-indent:20px"><div><li><a href="/install/">Install</a></li></div><div><li><a href="/usage/">Usage</a></li></div><div><li class="active">Settings</li></div><div><li><a href="/features/">Features</a></li></div><ul style="text-indent:40px"><div><li><a href="/features/image/">Images &amp; Videos</a></li></div><div><li><a href="/features/audio/">Audio</a></li></div><div><li><a href="/features/midi/">MIDI</a></li></div><div><li><a href="/features/osc/">OSC</a></li></div><div><li><a href="/features/webcam/">WebCam</a></li></div><div><li><a href="/features/keyboard/">Keyboard</a></li></div><div><li><a href="/features/gamepad/">Gamepad</a></li></div></ul></ul><div><li><a href="/vedajs/">VEDA.js</a></li></div><div><li><a href="/faq/">FAQ</a></li></div><div><li><a href="/contributing/">CONTRIBUTING</a></li></div></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 kcQdHk"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3463228773"><h1 id="settings">Settings</h1>
+</style></head><body><div><div id="__next"><div data-reactroot=""><div><div class="jsx-2358421718"><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-2358421718"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><ul style="text-indent:20px"><div><li><a href="/install/">Install</a></li></div><div><li><a href="/usage/">Usage</a></li></div><div><li class="active">Settings</li></div><div><li><a href="/features/">Features</a></li></div><ul style="text-indent:40px"><div><li><a href="/features/image/">Images &amp; Videos</a></li></div><div><li><a href="/features/audio/">Audio</a></li></div><div><li><a href="/features/midi/">MIDI</a></li></div><div><li><a href="/features/osc/">OSC</a></li></div><div><li><a href="/features/webcam/">WebCam</a></li></div><div><li><a href="/features/keyboard/">Keyboard</a></li></div><div><li><a href="/features/gamepad/">Gamepad</a></li></div></ul></ul><div><li><a href="/vedajs/">VEDA.js</a></li></div><div><li><a href="/faq/">FAQ</a></li></div><div><li><a href="/contributing/">CONTRIBUTING</a></li></div></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 kcQdHk"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3463228773"><h1 id="settings">Settings</h1>
 <p>VEDA has 3 ways to change settings: <code>Global Settings</code>, <code>Project Settings</code> and <code>File Settings</code>.</p>
 <p>The order of priority is <code>File Settings &gt; Project Settings &gt; Global Settings</code>.<br>For example, when you set <code>&quot;audio&quot;: false</code> in Project Settings and <code>&quot;audio&quot;: true</code> in File Settings, VEDA enables audio inputs.</p>
 <h2 id="global-settings">Global Settings</h2>
@@ -709,7 +857,7 @@ void <span class="hljs-function"><span class="hljs-title">main</span></span>() {
 <h2 id="which-one-should-i-use-">Which one should I use?</h2>
 <p>Use <code>.vedarc</code> for settings such as loading images / videos you use in the project.<br>Otherwise, write settings to file comment as File Settings.</p>
 </article></main></div></div><div class="shader__CanvasWrapper-eh1isw-0 cSNhIq"><canvas class="shader__Canvas-eh1isw-1 iCcgCC"></canvas></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{"isServer":true,"store":{"sagaTask":{"@@redux-saga/TASK":true,"id":5,"name":"rootSaga","joiners":null,"done":{}}},"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false}},"pathname":"/settings","query":{},"buildId":"5ecc0632-98b5-4f8f-a7c7-bb41928c209c","buildStats":{"app.js":{"hash":"f1c62c0dd9501157dabf86b3bcf1efa1"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+          __NEXT_DATA__ = {"props":{"isServer":true,"store":{"sagaTask":{"@@redux-saga/TASK":true,"id":5,"name":"rootSaga","joiners":null,"done":{}}},"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false}},"pathname":"/settings","query":{},"buildId":"ebc348cf-ac49-464c-8f8d-054454b3ae30","buildStats":{"app.js":{"hash":"09def46fc38c406746c033386e128b9f"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -721,4 +869,4 @@ void <span class="hljs-function"><span class="hljs-title">main</span></span>() {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/settings" type="text/javascript" src="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/settings.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/5ecc0632-98b5-4f8f-a7c7-bb41928c209c/page/_error.js"></script><div></div><script type="text/javascript" src="/_next/f1c62c0dd9501157dabf86b3bcf1efa1/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/settings" type="text/javascript" src="/_next/ebc348cf-ac49-464c-8f8d-054454b3ae30/page/settings.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/ebc348cf-ac49-464c-8f8d-054454b3ae30/page/_error.js"></script><div></div><script type="text/javascript" src="/_next/09def46fc38c406746c033386e128b9f/app.js" async=""></script></div></body></html>

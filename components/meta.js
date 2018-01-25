@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import constants from './constants';
 import sanitize from 'sanitize.css';
 import openSans from './open-sans.css';
+import hljs from 'highlight.js/styles/atom-one-dark.css';
 
 export default ({ url, title, image, description, siteName }) => (
   <div>
@@ -42,12 +43,12 @@ export default ({ url, title, image, description, siteName }) => (
       <link rel="manifest" href="/static/favicons/manifest.json"/>
       <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
       <meta name="theme-color" content="#ffffff"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/>
     </Helmet>
     <script async src="https://platform.twitter.com/widgets.js"/>
-    <style global jsx>{sanitize}</style>
-    <style global jsx>{openSans}</style>
     <style global jsx>{`
+      ${sanitize}
+      ${openSans}
+      ${hljs}
       body {
         margin: 0;
         padding: 0;
