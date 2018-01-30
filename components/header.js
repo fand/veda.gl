@@ -123,10 +123,6 @@ const Button = styled.div`
 `;
 
 class Header extends React.Component {
-  state = {
-    share: false,
-  }
-
   componentDidMount() {
     const lang = (location.search.match(/lang=(en|ja)/) || [])[1];
     if (lang && lang !== this.props.lang) {
@@ -142,15 +138,9 @@ class Header extends React.Component {
     this.props.dispatch(setLanguage(this.props.lang === 'en' ? 'ja' : 'en'));
   }
 
-  toggleShare = () => {
-    this.setState(prevState => ({
-      share: !prevState.share,
-    }));
-  }
-
   render() {
     const cls = this.props.isHeaderVisible ? 'visible' : '';
-    const { url, title, lang } = this.props;
+    const { lang } = this.props;
     return (
       <Nav className={cls}>
         <Logo className={cls}>
