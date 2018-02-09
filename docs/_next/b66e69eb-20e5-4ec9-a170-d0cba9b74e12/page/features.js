@@ -1,6 +1,0 @@
-
-          window.__NEXT_REGISTER_PAGE('/features', function() {
-            var comp = module.exports=webpackJsonp([15],{344:function(a,b,c){a.exports=c(345)},345:function(a,b,c){"use strict";function d(a){return a&&a.__esModule?a:{default:a}}Object.defineProperty(b,"__esModule",{value:!0});var e=c(0),f=d(e),g=c(6),h=d(g),i=c(8),j=d(i),k=c(7);b.default=(0,k.withReduxSaga)(function(){return f.default.createElement(h.default,{path:"/features/image",article:{en:(0,j.default)("---\ntitle: Features\n---\n# Features\n\n- [Loading Images](/features/image)\n- [Audio Input](/features/audio)\n- [MIDI Input](/features/midi)\n- [OSC](/features/osc)\n- [Keyboard Input](/features/keyboard)\n- [WebCam Input](/features/webcam)\n- Server Mode\n- Multipass Rendering\n"),ja:(0,j.default)("---\ntitle: \u6A5F\u80FD\u4E00\u89A7\n---\n# \u6A5F\u80FD\u4E00\u89A7\n\n- [\u753B\u50CF/\u52D5\u753B\u306E\u30ED\u30FC\u30C9](/features/image?lang=ja)\n- [\u97F3\u58F0\u5165\u529B](/features/audio?lang=ja)\n- [MIDI\u5165\u529B](/features/midi?lang=ja)\n- [OSC](/features/osc?lang=ja)\n- [\u30AD\u30FC\u30DC\u30FC\u30C9\u5165\u529B](/features/keyboard?lang=ja)\n- [Web\u30AB\u30E1\u30E9](/features/webcam?lang=ja)\n- Server Mode\n- Multipass Rendering\n")}})})}},[344]);
-            return { page: comp.default }
-          })
-        

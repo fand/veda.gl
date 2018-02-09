@@ -47,6 +47,7 @@ export default class extends Document {
           {this.helmetJsx}
           {this.helmetHeadComponents}
           {this.props.styleTags}
+          <script dangerouslySetInnerHTML={{ __html: constants.ga }}/>
         </Head>
         <body {...this.helmetBodyAttrComponents}>
           <Main/>
