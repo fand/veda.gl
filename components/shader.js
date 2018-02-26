@@ -40,7 +40,7 @@ class Shader extends React.Component {
   componentDidMount() {
     const shader = this.getShader();
     setTimeout(() => {
-      const Veda = require('vedajs');
+      const Veda = require('vedajs').default; // TODO:Fix vedajs
       this.veda = new Veda({
         pixelRatio: 5,
         frameskip: 5,
