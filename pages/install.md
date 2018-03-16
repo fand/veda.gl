@@ -39,6 +39,8 @@ If you are uning macOS, glslangValidator can be installed by homebrew.
 
 `brew install glslang`
 
+The path of glslangValidator can also be specified in the settings of VEDA.
+Add the path of glslangValidator (e.g.: `/usr/local/bin/glslangValidator`) to `glslangValidator path` property.
 
 #### Windows or Linux
 
@@ -50,7 +52,8 @@ https://www.lunarg.com/vulkan-sdk/
 After that, add installed glslangValidator to your PATH environment variable.
 In Windows, glslangValidator will be installed in `C:\VulkanSDK\( version )\Bin`.
 
-The path of glslangValidator can also be specified in the settings of VEDA.  
+The path of glslangValidator can also be specified in the settings of VEDA.
+Add the path of glslangValidator (e.g.: `C:\VulkanSDK( version )\Bin\glslangValidator.exe`) to `glslangValidator path` property.
 
 
 ## 2. Install VEDA
