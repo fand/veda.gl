@@ -12,6 +12,7 @@ export default ({ url, title, image, description, siteName }) => (
       <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       <title>{title}</title>
+      <meta name="Description" content={description}/>
 
       {/* Facebook */}
       <meta property="og:url" content={url}/>
