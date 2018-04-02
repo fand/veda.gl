@@ -16,7 +16,7 @@ export default {
   ga: `
 !function(v,e,d,a,g,l){v.GoogleAnalyticsObject=d;v[d]||(v[d]=function(){
 (v[d].q=v[d].q||[]).push(arguments)});v[d].l=+new Date;g=e.createElement(a);
-l=e.getElementsByTagName(a)[0];g.src='//www.google-analytics.com/analytics.js';
+l=e.getElementsByTagName(a)[0];g.src='https://www.google-analytics.com/analytics.js';
 l.parentNode.insertBefore(g,l)}(window,document,'ga','script');
 
 ga('create', 'UA-41787635-14', 'auto');

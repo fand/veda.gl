@@ -65,6 +65,10 @@ class Layout extends React.Component {
   });
 
   componentDidMount() {
+    if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(console.log).catch(console.error);
+    }
+
     this.body.addEventListener('scroll', this.watchScroll);
     this.watchScroll();
     this.props.dispatch(hideMenu());

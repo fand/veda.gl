@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o docs && cp CNAME docs",
+    "build": "next build && next export -o docs && cp CNAME docs && sw-precache --config=sw-precache.js --verbose",
     "start": "next start",
     "test": "eslint pages components && npm run build"
   },
@@ -41,7 +41,10 @@
     "babel-plugin-styled-components": "^1.3.0",
     "eslint": "^4.12.1",
     "eslint-config-xo": "^0.20.1",
+    "next-workbox": "^1.4.1",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "sw-precache": "^5.2.1",
+    "sw-precache-webpack-plugin": "^0.11.5"
   }
 }
