@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import LazyLoad from 'react-lazyload';
 import constants from './constants';
 import { connect } from 'react-redux';
 import { hideMenu } from '../actions';
@@ -110,7 +111,9 @@ class Sidebar extends React.PureComponent {
           </Link>
           <div className="banners">
             <a className="github" target="\_blank" href="https://github.com/fand/veda">
-              <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social"/>
+              <LazyLoad once>
+                <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social&maxAge=259200"/>
+              </LazyLoad>
             </a>
             <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">
               <img alt="hashtag #vedajs" src="/static/images/hashtag.png"/>

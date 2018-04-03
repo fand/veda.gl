@@ -56,11 +56,11 @@ export default ({ url, title, image, description, siteName, lang }) => (
         padding: 0;
         background: ${constants.bg};
         color: ${constants.fg};
-        font-family: monospace;
         font-size: 16px;
         line-height: 1.8em;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
+        font-display: swap;
         text-rendering: auto;
         text-shadow: 0 0 2px black;
         -webkit-font-smoothing: antialiased;
