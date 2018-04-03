@@ -84,19 +84,15 @@ class Sidebar extends React.PureComponent {
     const { path } = this.props;
     if (isActive(path, to)) {
       return (
-        <div onClick={this.hideMenu}>
-          <li className="active">
-            {children}
-          </li>
-        </div>
+        <li className="active" onClick={this.hideMenu}>
+          {children}
+        </li>
       );
     }
     return (
-      <div onClick={this.hideMenu}>
-        <li>
-          <Link href={to}><a>{children}</a></Link>
-        </li>
-      </div>
+      <li onClick={this.hideMenu}>
+        <Link href={to}><a>{children}</a></Link>
+      </li>
     );
   }
 
@@ -109,7 +105,7 @@ class Sidebar extends React.PureComponent {
         <Header>
           <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
             <a>
-              <img className="logo" src="/static/images/logo_header.png"/>
+              <img className="logo" src="/static/images/logo_header.png" alt="VEDA Header"/>
             </a>
           </Link>
           <div className="banners">
@@ -125,21 +121,23 @@ class Sidebar extends React.PureComponent {
         {lang === 'en' &&
           <ul>
             <li>VEDA for Atom</li>
-            <ul style={{ textIndent: '20px' }}>
-              <Li to="/install">Install</Li>
-              <Li to="/usage">Usage</Li>
-              <Li to="/settings">Settings</Li>
-              <Li to="/features">Features</Li>
-              <ul style={{ textIndent: '40px' }}>
-                <Li to="/features/image">Images & Videos</Li>
-                <Li to="/features/audio">Audio</Li>
-                <Li to="/features/midi">MIDI</Li>
-                <Li to="/features/osc">OSC</Li>
-                <Li to="/features/webcam">WebCam</Li>
-                <Li to="/features/keyboard">Keyboard</Li>
-                <Li to="/features/gamepad">Gamepad</Li>
+            <li>
+              <ul style={{ textIndent: '20px' }}>
+                <Li to="/install">Install</Li>
+                <Li to="/usage">Usage</Li>
+                <Li to="/settings">Settings</Li>
+                <Li to="/features">Features</Li>
+                <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/image">Images & Videos</Li>
+                  <Li to="/features/audio">Audio</Li>
+                  <Li to="/features/midi">MIDI</Li>
+                  <Li to="/features/osc">OSC</Li>
+                  <Li to="/features/webcam">WebCam</Li>
+                  <Li to="/features/keyboard">Keyboard</Li>
+                  <Li to="/features/gamepad">Gamepad</Li>
+                </ul>
               </ul>
-            </ul>
+            </li>
             <Li to="/vedajs">VEDA.js</Li>
             <Li to="/faq">FAQ</Li>
             <Li to="/contributing">CONTRIBUTING</Li>
@@ -148,21 +146,23 @@ class Sidebar extends React.PureComponent {
         {lang === 'ja' &&
           <ul>
             <li>VEDA for Atom</li>
-            <ul style={{ textIndent: '20px' }}>
-              <Li to="/install?lang=ja">インストール</Li>
-              <Li to="/usage?lang=ja">操作方法</Li>
-              <Li to="/settings?lang=ja">設定</Li>
-              <Li to="/features?lang=ja">機能一覧</Li>
-              <ul style={{ textIndent: '40px' }}>
-                <Li to="/features/image?lang=ja">画像/動画</Li>
-                <Li to="/features/audio?lang=ja">音声入力</Li>
-                <Li to="/features/midi?lang=ja">MIDI入力</Li>
-                <Li to="/features/osc?lang=ja">OSC</Li>
-                <Li to="/features/webcam?lang=ja">Webカメラ</Li>
-                <Li to="/features/keyboard?lang=ja">キーボード</Li>
-                <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
+            <li>
+              <ul style={{ textIndent: '20px' }}>
+                <Li to="/install?lang=ja">インストール</Li>
+                <Li to="/usage?lang=ja">操作方法</Li>
+                <Li to="/settings?lang=ja">設定</Li>
+                <Li to="/features?lang=ja">機能一覧</Li>
+                <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/image?lang=ja">画像/動画</Li>
+                  <Li to="/features/audio?lang=ja">音声入力</Li>
+                  <Li to="/features/midi?lang=ja">MIDI入力</Li>
+                  <Li to="/features/osc?lang=ja">OSC</Li>
+                  <Li to="/features/webcam?lang=ja">Webカメラ</Li>
+                  <Li to="/features/keyboard?lang=ja">キーボード</Li>
+                  <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
+                </ul>
               </ul>
-            </ul>
+            </li>
             <Li to="/vedajs?lang=ja">VEDA.js</Li>
             <Li to="/faq?lang=ja">FAQ</Li>
             <Li to="/contributing?lang=ja">CONTRIBUTING</Li>

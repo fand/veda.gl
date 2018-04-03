@@ -146,14 +146,14 @@ class Header extends React.Component {
         <Logo className={cls}>
           <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
             <a>
-              <img src="/static/images/logo_header.png"/>
+              <img src="/static/images/logo_header.png" alt="VEDA logo"/>
             </a>
           </Link>
         </Logo>
 
         <Left>
           <Button onClick={this.toggleMenu} className="mobile">
-            <img src="/static/images/i_menu.png"/>
+            <img src="/static/images/i_menu.png" alt="Menu"/>
           </Button>
         </Left>
         <Right>

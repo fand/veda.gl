@@ -118,6 +118,7 @@ class Layout extends React.Component {
           image={this.image()}
           description={this.description()}
           siteName={constants.og.title}
+          lang={this.props.lang}
         />
         <Wrapper className={sc}>
           <SidebarWrapper className={sc}>

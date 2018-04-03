@@ -5,9 +5,10 @@ import sanitize from 'sanitize.css';
 import openSans from './open-sans.css';
 import hljs from 'highlight.js/styles/atom-one-dark.css';
 
-export default ({ url, title, image, description, siteName }) => (
+export default ({ url, title, image, description, siteName, lang }) => (
   <div>
     <Helmet>
+      <html lang={lang || 'en'}/>
       <meta charSet="utf-8"/>
       <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>

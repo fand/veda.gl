@@ -7,7 +7,7 @@ import { withReduxSaga } from '../../store';
 
 export default withReduxSaga(() => (
   <Article
-    path="/features/image"
+    path="/features"
     article={{
       en: parse(en),
       ja: parse(ja),
