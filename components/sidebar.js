@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import Router from 'next/router';
 import LazyLoad from 'react-lazyload';
 import constants from './constants';
 import { connect } from 'react-redux';
@@ -81,6 +82,8 @@ const isActive = (path, to) => {
 class Sidebar extends React.PureComponent {
   hideMenu = () => this.props.dispatch(hideMenu())
 
+  prefetch = to => () => Router.prefetch(to)
+
   Li = ({ to, children }) => {
     const { path } = this.props;
     if (isActive(path, to)) {
@@ -91,7 +94,7 @@ class Sidebar extends React.PureComponent {
       );
     }
     return (
-      <li onClick={this.hideMenu}>
+      <li onClick={this.hideMenu} onMouseOver={this.prefetch(to)}>
         <Link href={to}><a>{children}</a></Link>
       </li>
     );
