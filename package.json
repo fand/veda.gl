@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o docs && cp CNAME docs && sw-precache --config=sw-precache.js --verbose",
+    "build": "NODE_ENV=production next build && next export -o docs && cp CNAME docs && workbox generateSW workbox-config.js",
     "start": "next start",
     "test": "eslint pages components && npm run build"
   },
@@ -45,7 +45,6 @@
     "next-workbox": "^1.4.1",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
-    "sw-precache": "^5.2.1",
-    "sw-precache-webpack-plugin": "^0.11.5"
+    "workbox-cli": "^3.0.1"
   }
 }
