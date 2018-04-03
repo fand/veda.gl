@@ -38,9 +38,9 @@ float triNoise2d(in vec2 p, float spd)
 
 void main() {
   vec2 p = (gl_FragCoord.xy * 2. - resolution) / min(resolution.x, resolution.y);
-  float t = time * .3 + 100.;
+  float t = mod(time * .2 + 100., 200.);
 
-  p = p * .5 + 1.;
+  p = p * .6 + 1.;
   p.x += 2.;  // Noises are too weak around origin
 
   p /= vec2(
@@ -51,7 +51,7 @@ void main() {
   gl_FragColor = vec4(
     0.8 * sin(p.x * 2.3 + 2.7),
     0.8 * sin(p.y * 2.2 + 3.7),
-    .8,
+    0.8,
     1.0
   ) * .6;
 }

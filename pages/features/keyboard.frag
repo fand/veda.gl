@@ -79,9 +79,9 @@ void main() {
 
     // Melting
     gl_FragColor += vec4(
-      texture2D(backbuffer, uv + vec2(0, .003) * (1. + noise(uv * 13. + time) * 2.)).r,
-      texture2D(backbuffer, uv + vec2(0, .003) * (1. + noise(uv * 17. + time) * 2.)).g,
-      texture2D(backbuffer, uv + vec2(0, .003) * (1. + noise(uv * 11. + time) * 2.)).b,
+      texture2D(backbuffer, uv + vec2(0, .001) * (1. + noise(uv * 13. + time) * 2.)).r,
+      texture2D(backbuffer, uv + vec2(0, .001) * (1. + noise(uv * 17. + time) * 2.)).g,
+      texture2D(backbuffer, uv + vec2(0, .001) * (1. + noise(uv * 11. + time) * 2.)).b,
       1.
     ) * .96;
 }

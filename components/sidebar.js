@@ -115,7 +115,7 @@ class Sidebar extends React.PureComponent {
           <div className="banners">
             <a className="github" target="\_blank" href="https://github.com/fand/veda">
               <LazyLoad once placeholder={<img alt="GitHub Stars" src="/static/images/shield_dummy.png"/>}>
-                <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social &maxAge=259200"/>
+                <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social&maxAge=259200"/>
               </LazyLoad>
             </a>
             <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">

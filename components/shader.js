@@ -1,31 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
-import { throttle } from 'lodash';
+import { injectGlobal } from 'styled-components';
 import constants from 'constants';
+import getVeda from './veda';
 
-import frag from './shader.frag';
+import frag from '../pages/index.frag';
 const DEFAULT_SHADER = {
   attach(veda) {
     veda.loadFragmentShader(frag);
   },
 };
 
-const CanvasWrapper = styled.div`
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: black;
-`;
-
-const Canvas = styled.canvas`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
+// eslint-disable-next-line
+injectGlobal`
+  body {
+    background: black;
+  }
 `;
 
 class Shader extends React.Component {
@@ -40,47 +30,25 @@ class Shader extends React.Component {
   componentDidMount() {
     const shader = this.getShader();
     setTimeout(() => {
-      const Veda = require('vedajs').default; // TODO:Fix vedajs
-      this.veda = new Veda({
-        pixelRatio: 5,
-        frameskip: 5,
-      });
-      this.veda.setCanvas(this.canvas);
+      const veda = getVeda();
       if (shader.attach) {
-        shader.attach(this.veda);
+        shader.attach(veda);
       }
-      this.veda.play();
-      window.addEventListener('resize', this.resize);
+      veda.play();
     }, 0);
   }
 
   componentWillUnmount() {
     const shader = this.getShader();
-    this.veda.stop();
+
     if (shader.detach) {
-      shader.detach(this.veda);
+      const veda = getVeda();
+      shader.detach(veda);
     }
-    window.removeEventListener('resize', this.resize);
-  }
-
-  resize = throttle(() => {
-    this.veda.resize(this.container.offsetWidth, this.container.offsetHeight);
-  })
-
-  setContainer = el => {
-    this.container = el;
-  }
-
-  setCanvas = el => {
-    this.canvas = el;
   }
 
   render() {
-    return (
-      <CanvasWrapper innerRef={this.setContainer}>
-        <Canvas innerRef={this.setCanvas}/>
-      </CanvasWrapper>
-    );
+    return null;
   }
 }
 
