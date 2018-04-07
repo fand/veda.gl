@@ -5362,9 +5362,9 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vedajs@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.8.1.tgz#82546de361df39bb386d5ae9bfbdc2be8dc7b4f3"
+vedajs@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.8.2.tgz#45a33b707ebfec9bda40f36d1206a459967feb40"
   dependencies:
     is-video "^1.0.1"
     three "^0.91.0"
