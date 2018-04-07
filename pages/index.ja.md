@@ -9,7 +9,7 @@
 
 VEDAは、AtomエディタでのVJやライブコーディングを可能にするパッケージです。
 
-<video src="/static/videos/veda.mp4" autoplay loop></video>
+![](https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif)
 
 
 ### 使いやすいGLSL実行環境

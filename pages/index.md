@@ -9,7 +9,7 @@
 
 VEDA is an Atom package for VJ / Livecoding with GLSL.
 
-<video src="/static/videos/veda.mp4" autoplay loop></video>
+![](https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif)
 
 
 ### Easy GLSL runtime
