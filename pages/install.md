@@ -26,6 +26,9 @@ VEDA depends on following softwares to be installed:
 Python 2.x is required to build native add-ons in VEDA's dependency.
 Check the version of your python with `python -V`.
 
+If you've already installed both Python 2 and 3, you have to tell npm to use python 2.
+Run `npm config set python python2`.
+
 
 ### glslangValidator
 
