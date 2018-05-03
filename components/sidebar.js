@@ -131,6 +131,7 @@ class Sidebar extends React.PureComponent {
               <ul style={{ textIndent: '20px' }}>
                 <Li to="/install">Install</Li>
                 <Li to="/usage">Usage</Li>
+                <Li to="/commands">Commands</Li>
                 <Li to="/settings">Settings</Li>
                 <Li to="/features">Features</Li>
                 <ul style={{ textIndent: '40px' }}>
@@ -156,6 +157,7 @@ class Sidebar extends React.PureComponent {
               <ul style={{ textIndent: '20px' }}>
                 <Li to="/install?lang=ja">インストール</Li>
                 <Li to="/usage?lang=ja">操作方法</Li>
+                <Li to="/commands?lang=ja">コマンド</Li>
                 <Li to="/settings?lang=ja">設定</Li>
                 <Li to="/features?lang=ja">機能一覧</Li>
                 <ul style={{ textIndent: '40px' }}>

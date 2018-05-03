@@ -49,6 +49,7 @@ module.exports = {
       '/install': { page: '/install' },
       '/usage': { page: '/usage' },
       '/settings': { page: '/settings' },
+      '/commands': { page: '/commands' },
       '/features': { page: '/features' },
       '/features/image': { page: '/features/image' },
       '/features/audio': { page: '/features/audio' },

@@ -20,132 +20,140 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.0.1/workbox
  */
 self.__precacheManifest = [
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/main.js",
-    "revision": "d6f5622ad38b505c7171ff5fe528c282"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/main.js",
+    "revision": "a9f2a1680ce4579f52712a2226496a3d"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/_error.js",
-    "revision": "997ee19baec5ba97feacccff4c7d8ff0"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/_error.js",
+    "revision": "13c7bb4cb45dc56eaa676f00741f2b34"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/contributing.js",
-    "revision": "d461a9366331c07f862e1e38ad12b39e"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/commands.js",
+    "revision": "3b90c314bb0b7bf623dc800ce24d3226"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/faq.js",
-    "revision": "46d2e02b685be906041453a6a6c216d4"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/contributing.js",
+    "revision": "e9bee53f50884ed272f91e08b54b03e2"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features.js",
-    "revision": "1472c90f5f76533430edc9751970479c"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/faq.js",
+    "revision": "a78dcbae00a793892d44c6ad476b10b3"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/audio.js",
-    "revision": "887d1c630e1dec9bf6d4e950287938d9"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features.js",
+    "revision": "5871fbca53a1f08eddffc3620a48facf"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/gamepad.js",
-    "revision": "d2b4cea21cfc6609b510d2eb4a31b819"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/audio.js",
+    "revision": "edc0fabbdf05888b7ac9ceba890fa039"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/image.js",
-    "revision": "bbc1fdca303c5c8c9081e63cbd5e35d6"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/gamepad.js",
+    "revision": "e5dd14369dd5771b488cdae82b6b1d1d"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/keyboard.js",
-    "revision": "c1f525962159c2a5c571c6ebf6a14460"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/image.js",
+    "revision": "c74d86e8f5fca77f43a8e7b5c335bd62"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/midi.js",
-    "revision": "982cb98a9d9394e85b06fc84b80b6a50"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/keyboard.js",
+    "revision": "e5d3f2dfbef00834f436aca35cb7327b"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/osc.js",
-    "revision": "bcd41013eef2df34b65564ee306953ae"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/midi.js",
+    "revision": "9ed2634fe0fe585a8679defb4b7a18c6"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/video.js",
-    "revision": "91c30e4bcfed5d134d573d739591247a"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/osc.js",
+    "revision": "26920705729743608fd42eb70b914b3e"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/features/webcam.js",
-    "revision": "b828c9bae0b79152813a26315c7e1810"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/video.js",
+    "revision": "b0bcd7a3e041c07f0f79f1b07465804a"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/index.js",
-    "revision": "1a38ec69d98004052b74d7794a75b305"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/features/webcam.js",
+    "revision": "3dfa073dc3274b51571d1f565b168a57"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/install.js",
-    "revision": "8b5b16502d6397151e51f69532c941b5"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/index.js",
+    "revision": "d061680989bb69665fcfbdd117bcd731"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/parse.js",
-    "revision": "7648f37808fd507a10aa840229e72c69"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/install.js",
+    "revision": "0df0cdccccadea584f31a1d5c410a97e"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/settings.js",
-    "revision": "203c3a1e845c4484c31bcb7f0f129460"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/parse.js",
+    "revision": "1753345032cb16a28f10470a0da6f8bf"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/usage.js",
-    "revision": "b1771399611420f4fdfdc1368a14902b"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/settings.js",
+    "revision": "292c762fe951b104b999812a64b99ea1"
   },
   {
-    "url": "_next/514c7b54-f4ef-4e7b-8763-8770bfc99300/page/vedajs.js",
-    "revision": "e6acbe07558c22bdaa5597fbcecb7dc2"
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/usage.js",
+    "revision": "d7ce183a949af696fdca8353dfed1656"
+  },
+  {
+    "url": "_next/9976e897-56a3-4bc6-93a9-1ccf77b06378/page/vedajs.js",
+    "revision": "46b42ae8cac919a21f6c56a110ae1b38"
+  },
+  {
+    "url": "commands/index.html",
+    "revision": "cebddd7c2f385b84bc9d38ca403a0f45"
   },
   {
     "url": "contributing/index.html",
-    "revision": "1261260c80c116e8a3f11c8a3d19064a"
+    "revision": "24eb308218c16dd63bdb9b2dc65f8450"
   },
   {
     "url": "faq/index.html",
-    "revision": "511f012c467dcd646ef2aa24788fdf54"
+    "revision": "b6a1f8a075c8b44c8571b349fbc7d98d"
   },
   {
     "url": "features/audio/index.html",
-    "revision": "1d7bd544a2f8e6471bde90988518b9a0"
+    "revision": "94bf2b3251459b8e5bd0f812a451685d"
   },
   {
     "url": "features/gamepad/index.html",
-    "revision": "cb3c1933518ccca0c4ef1e4527a75fda"
+    "revision": "ce9150049bb75561e4e2c27b642e22d5"
   },
   {
     "url": "features/image/index.html",
-    "revision": "c02118a4befa84b6f4fd9e674af6d908"
+    "revision": "5e7cf5308b2714e12b87876e004a4d41"
   },
   {
     "url": "features/index.html",
-    "revision": "a812eb6c2cf5d0d8272668c87fd8ab1c"
+    "revision": "4fd5f19b0815769c688b2cc743a5a64b"
   },
   {
     "url": "features/keyboard/index.html",
-    "revision": "7084156afaf945265a9c9e1d11166791"
+    "revision": "1b2af8b2592d8baf9c9543161d64282a"
   },
   {
     "url": "features/midi/index.html",
-    "revision": "7222b3607989d677a3eb95b0e4124f91"
+    "revision": "f60a54021463a9ea3605fd25c9658dd7"
   },
   {
     "url": "features/osc/index.html",
-    "revision": "5cb4ad87f3ecf43af533cc8488db10c1"
+    "revision": "c95f5e9dd0dd94507e7593304f12d4a1"
   },
   {
     "url": "features/webcam/index.html",
-    "revision": "eabc5a7701a58ea9285297ffed51a872"
+    "revision": "47edbd6ecca3a9e82db26dfe0913533c"
   },
   {
     "url": "index.html",
-    "revision": "6da05bff8489a12650025cf5e3ffed0f"
+    "revision": "aeda964302ae5d5376773d04604e1dab"
   },
   {
     "url": "install/index.html",
-    "revision": "4e28ff6264a33922ed517f3616b76fd1"
+    "revision": "9ef410714e4d699be2c5aaae34f89459"
   },
   {
     "url": "settings/index.html",
-    "revision": "f975644137218de542e99ae2b37b62fa"
+    "revision": "945c73415c9bc9ef30abc58e50e2c125"
   },
   {
     "url": "static/favicons/android-chrome-192x192.png",
@@ -369,11 +377,11 @@ self.__precacheManifest = [
   },
   {
     "url": "usage/index.html",
-    "revision": "dae44c3818a68119a561ec8412e6f8d2"
+    "revision": "d24bcf35f2ced1e28d390c3a57935826"
   },
   {
     "url": "vedajs/index.html",
-    "revision": "43a925b70468a5d1adb41c3da4031d29"
+    "revision": "c9aa37ce19005fff217c618681fa0400"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
