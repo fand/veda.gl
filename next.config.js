@@ -59,6 +59,7 @@ module.exports = {
       '/features/webcam': { page: '/features/webcam' },
       '/features/keyboard': { page: '/features/keyboard' },
       '/features/gamepad': { page: '/features/gamepad' },
+      '/features/server': { page: '/features/server' },
       '/vedajs': { page: '/vedajs' },
       '/faq': { page: '/faq' },
       '/contributing': { page: '/contributing' },

@@ -144,6 +144,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/webcam">WebCam</Li>
                   <Li to="/features/keyboard">Keyboard</Li>
                   <Li to="/features/gamepad">Gamepad</Li>
+                  <Li to="/features/server">Server Mode</Li>
                 </ul>
               </ul>
             </li>
@@ -172,6 +173,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/webcam?lang=ja">Webカメラ</Li>
                   <Li to="/features/keyboard?lang=ja">キーボード</Li>
                   <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
+                  <Li to="/features/server?lang=ja">サーバーモード</Li>
                 </ul>
               </ul>
             </li>
