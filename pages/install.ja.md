@@ -26,6 +26,9 @@ VEDAは以下のソフトウェアに依存しています。
 VEDAはNode.jsのネイティブアドオンを利用するため、Python 2系をインストールする必要があります。
 `python -V` を実行して、Pythonのバージョンを確認してください。
 
+既にPython2と3をインストール済みの場合、npmがpython2を参照するように設定します。
+ターミナルから `npm config set python python2` を実行して下さい。
+
 
 ### glslangValidator
 
@@ -50,7 +53,7 @@ https://www.lunarg.com/vulkan-sdk/
 続いて、glslangValidatorがインストールされた場所を環境変数 `PATH` に加える必要があります。
 Windowsの場合、glslangValidatorは `C:\VulkanSDK\( version )\Bin` にインストールされているはずです。
 
-glslangValidator の場所は、VEDAの設定で指定することもできます。  
+glslangValidator の場所は、VEDAの設定で指定することもできます。
 
 
 ## 2. VEDA本体のインストール

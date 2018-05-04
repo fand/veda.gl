@@ -131,9 +131,12 @@ class Sidebar extends React.PureComponent {
               <ul style={{ textIndent: '20px' }}>
                 <Li to="/install">Install</Li>
                 <Li to="/usage">Usage</Li>
+                <Li to="/commands">Commands</Li>
                 <Li to="/settings">Settings</Li>
                 <Li to="/features">Features</Li>
                 <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/fragment">Fragment Shaders</Li>
+                  <Li to="/features/vertex">Vertex Shaders</Li>
                   <Li to="/features/image">Images & Videos</Li>
                   <Li to="/features/audio">Audio</Li>
                   <Li to="/features/midi">MIDI</Li>
@@ -141,6 +144,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/webcam">WebCam</Li>
                   <Li to="/features/keyboard">Keyboard</Li>
                   <Li to="/features/gamepad">Gamepad</Li>
+                  <Li to="/features/server">Server Mode</Li>
                 </ul>
               </ul>
             </li>
@@ -156,9 +160,12 @@ class Sidebar extends React.PureComponent {
               <ul style={{ textIndent: '20px' }}>
                 <Li to="/install?lang=ja">インストール</Li>
                 <Li to="/usage?lang=ja">操作方法</Li>
+                <Li to="/commands?lang=ja">コマンド</Li>
                 <Li to="/settings?lang=ja">設定</Li>
                 <Li to="/features?lang=ja">機能一覧</Li>
                 <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/fragment?lang=ja">フラグメントシェーダー</Li>
+                  <Li to="/features/vertex?lang=ja">頂点シェーダー</Li>
                   <Li to="/features/image?lang=ja">画像/動画</Li>
                   <Li to="/features/audio?lang=ja">音声入力</Li>
                   <Li to="/features/midi?lang=ja">MIDI入力</Li>
@@ -166,6 +173,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/webcam?lang=ja">Webカメラ</Li>
                   <Li to="/features/keyboard?lang=ja">キーボード</Li>
                   <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
+                  <Li to="/features/server?lang=ja">サーバーモード</Li>
                 </ul>
               </ul>
             </li>

@@ -55,25 +55,6 @@ VEDA will evaluate `myshader.frag` and show the result:
 Congratulations!!
 Now you can edit the code and see the result with `ctrl-enter`.
 
-
-## Other commands
-
-Here is the list of all commands:
-
-- `Veda: Toggle`
-  - Start / Stop VEDA.
-- `Veda: Load Shader` (key: `ctrl-enter`)
-  - Load the shader on current editor.
-- `Veda: Watch Shader` (key: `ctrl-shift-enter`)
-  - Watch current tab and load the shader automatically.
-- `Veda: Watch Active Editor` (key: `ctrl-alt-enter`)
-  - Watch active tab and run watch-shader automatically.
-- `Veda: Stop Watching` (key: `ctrl-.`)
-  - Stop `watch-shader` and `watch-active-editor`.
-
-In most cases you only need `Veda: Toggle` and `Veda: Load Shader`.
-
-
 ---
 
 You've started the first step as a live coder!!

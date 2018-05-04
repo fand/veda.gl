@@ -54,25 +54,6 @@ void main(void) {
 おめでとうございます！
 あとは、コードを編集して `ctrl-enter` で実行、を繰り返して、次々にGLSLを実行していってください。
 
-
-## その他コマンド一覧
-
-VEDAがAtomにインストールするコマンドは以下の通りです。
-
-- `Veda: Toggle`
-  - VEDAを起動/停止する
-- `Veda: Load Shader` (key: `ctrl-enter`)
-  - 現在開いているGLSLファイルを実行する
-- `Veda: Watch Shader` (key: `ctrl-shift-enter`)
-  - 現在開いているファイルの変更を監視し、自動的に実行する
-- `Veda: Watch Active Editor` (key: `ctrl-alt-enter`)
-  - アクティブなタブの変更を監視し、自動的に実行する
-- `Veda: Stop Watching` (key: `ctrl-.`)
-  - `watch-shader` と `watch-active-editor` を停止する
-
-基本的には、最初の2つのコマンドで事足りるでしょう。
-
-
 ---
 
 これであなたはVEDAでライブコーディングできるようになりました！
