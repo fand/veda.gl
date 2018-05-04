@@ -51,6 +51,7 @@ module.exports = {
       '/settings': { page: '/settings' },
       '/commands': { page: '/commands' },
       '/features': { page: '/features' },
+      '/features/fragment': { page: '/features/fragment' },
       '/features/image': { page: '/features/image' },
       '/features/audio': { page: '/features/audio' },
       '/features/midi': { page: '/features/midi' },

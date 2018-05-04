@@ -1,1 +1,0 @@
-module.exports=__NEXT_REGISTER_PAGE('/parse',function(){var a=webpackJsonp([18],{338:function(a,b,c){a.exports=c(2)}},[338]);return{page:a.default}});

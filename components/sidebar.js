@@ -135,6 +135,7 @@ class Sidebar extends React.PureComponent {
                 <Li to="/settings">Settings</Li>
                 <Li to="/features">Features</Li>
                 <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/fragment">Fragment Shaders</Li>
                   <Li to="/features/image">Images & Videos</Li>
                   <Li to="/features/audio">Audio</Li>
                   <Li to="/features/midi">MIDI</Li>
@@ -161,6 +162,7 @@ class Sidebar extends React.PureComponent {
                 <Li to="/settings?lang=ja">設定</Li>
                 <Li to="/features?lang=ja">機能一覧</Li>
                 <ul style={{ textIndent: '40px' }}>
+                  <Li to="/features/fragment?lang=ja">フラグメントシェーダー</Li>
                   <Li to="/features/image?lang=ja">画像/動画</Li>
                   <Li to="/features/audio?lang=ja">音声入力</Li>
                   <Li to="/features/midi?lang=ja">MIDI入力</Li>
