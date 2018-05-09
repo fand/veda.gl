@@ -9,14 +9,21 @@ VEDAでは、MIDI入力からのイベントをGLSL上で利用できます。
 - `sampler2D midi`
 - `sampler2D note`
 
+## `sampler2D midi`
+
 `sampler2D midi` には、Web MIDI APIによって取得したMIDIイベントの値が保存されています。
 `midi` のサイズは `256x128` となっています。
 各ピクセルは、対応するチャンネルの直近のMIDIイベントの値を表しています。
 
-例えば、 `texture2D(midi, vec2(144. / 256., 0)).x` はMIDIチャンネル \#1の `note on` イベントのノートナンバーになります。
+例えば、 `texture2D(midi, vec2(176. / 256., 8. / 128)).x` は、チャンネル \#1のCCメッセージの値になります。
 
-- `144.` (0x90): MIDIチャンネル \#1の `note on` イベント
-- `.x` (2nd byte): ノートナンバー
+- `176.` (0xB0): チャンネル \#1 のMIDI CCイベント
+- `8.` (0x08): コントロールナンバー
+- `.x` (3nd byte): 値
+
+各種MIDIイベントの番号は、 [MIDI Event Table](http://www.onicos.com/staff/iz/formats/midi-event.html) を参考にして下さい。
+
+## `sampler2D note`
 
 `sampler2D note` には、各MIDIノートの値が保存されています。.
 `note` のサイズは `128x1` となっています。
