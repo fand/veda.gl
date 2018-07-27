@@ -5,7 +5,6 @@ import parse from '../parse';
 import en from './keyboard.md';
 import ja from './keyboard.ja.md';
 import shader from './keyboard.frag';
-import { withReduxSaga } from '../../store';
 
 export default connect()(() => (
   <Article

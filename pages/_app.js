@@ -6,26 +6,26 @@ import createStore from '../store';
 import withReduxSaga from 'next-redux-saga';
 
 class MyApp extends App {
-  static async getInitialProps ({ Component, ctx }) {
-    let pageProps = {}
+  static async getInitialProps({ Component, ctx }) {
+    let pageProps = {};
 
     if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps({ ctx })
+      pageProps = await Component.getInitialProps({ ctx });
     }
 
-    return { pageProps }
+    return { pageProps };
   }
 
-  render () {
-    const { Component, pageProps, store } = this.props
+  render() {
+    const { Component, pageProps, store } = this.props;
     return (
       <Container>
         <Provider store={store}>
-          <Component {...pageProps} />
+          <Component {...pageProps}/>
         </Provider>
       </Container>
-    )
+    );
   }
 }
 
-export default withRedux(createStore)(withReduxSaga({ async: true })(MyApp))
+export default withRedux(createStore)(withReduxSaga({ async: true })(MyApp));
