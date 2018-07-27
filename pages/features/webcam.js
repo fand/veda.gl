@@ -1,13 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './webcam.md';
 import ja from './webcam.ja.md';
 import defaultShader from './index.frag';
 import webcamShader from './webcam.frag';
-import { withReduxSaga } from '../../store';
 
-export default withReduxSaga(() => (
+export default connect()(() => (
   <Article
     path="/features/webcam"
     article={{

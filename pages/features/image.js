@@ -1,12 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Article from '../../components/article';
 import parse from '../parse';
 import en from './image.md';
 import ja from './image.ja.md';
 import frag from './image.frag';
-import { withReduxSaga } from '../../store';
 
-export default withReduxSaga(() => (
+export default connect()(() => (
   <Article
     path="/features/image"
     article={{
