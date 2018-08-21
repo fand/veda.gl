@@ -152,7 +152,7 @@ class Header extends React.Component {
         </Logo>
 
         <Left>
-          <Button onClick={this.toggleMenu} className="mobile">
+          <Button className="mobile" onClick={this.toggleMenu}>
             <img src="/static/images/i_menu.png" alt="Menu"/>
           </Button>
         </Left>
