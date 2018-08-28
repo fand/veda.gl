@@ -34,7 +34,7 @@
     "vedajs": "^0.9.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "babel-inline-import-loader": "^0.1.0",
     "babel-loader": "^7.1.5",
     "babel-minify-webpack-plugin": "^0.3.1",
