@@ -11,6 +11,8 @@ VEDA はAtomに以下のコマンドを追加します。
 * `Veda: Watch Active Editor` (key: `ctrl-alt-enter`)
 * `Veda: Stop Watching` (key: `ctrl-.`)
 * `Veda: Toggle Fullscreen` (key: `ctrl-escape`)
+* `Veda: Start Recording` (key: `ctrl-shift-,`)
+* `Veda: Stop Recording` (key: `ctrl-shift-.`)
 
 基本的には `Veda: Toggle` と `Veda: Load Shader` だけで十分でしょう。
 
@@ -40,3 +42,12 @@ VEDAを起動/停止します。
 
 シェーダーの実行結果をウインドウ全体に表示します。
 キーボード入力を利用したシェーダーや、スクリーンショットの撮影に便利です。
+
+## `Start Recording` (key: `ctrl-shift-,`)
+
+画面の録画を開始します。
+詳しくは [レコーディングのページ](/features/recording?lang=ja) をご覧ください。
+
+## `Stop Recording` (key: `ctrl-shift-.`)
+
+画面の録画を終了します。

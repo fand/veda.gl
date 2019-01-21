@@ -11,6 +11,8 @@ VEDA installs following commands to Atom.
 * `Veda: Watch Active Editor` (key: `ctrl-alt-enter`)
 * `Veda: Stop Watching` (key: `ctrl-.`)
 * `Veda: Toggle Fullscreen` (key: `ctrl-escape`)
+* `Veda: Start Recording` (key: `ctrl-shift-,`)
+* `Veda: Stop Recording` (key: `ctrl-shift-.`)
 
 In most cases you'll use only `Veda: Toggle` and `Veda: Load Shader`.
 
@@ -38,3 +40,12 @@ Stop `watch-shader` and `watch-active-editor`.
 
 Show the output fullscreen in the window.
 This is useful for taking screenshots, or shaders which uses keyboard inputs with `sampler2D key`.
+
+## `Start Recording` (key: `ctrl-shift-,`)
+
+Start screen recording.
+See [Recording](/features/recording) page for detail.
+
+## `Stop Recording` (key: `ctrl-shift-.`)
+
+Stop screen recording.

@@ -145,6 +145,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/keyboard">Keyboard</Li>
                   <Li to="/features/gamepad">Gamepad</Li>
                   <Li to="/features/server">Server Mode</Li>
+                  <Li to="/features/recording">Recoerding</Li>
                 </ul>
               </ul>
             </li>
@@ -174,6 +175,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/keyboard?lang=ja">キーボード</Li>
                   <Li to="/features/gamepad?lang=ja">ゲームパッド</Li>
                   <Li to="/features/server?lang=ja">サーバーモード</Li>
+                  <Li to="/features/recording?lang=ja">レコーディング</Li>
                 </ul>
               </ul>
             </li>
