@@ -93,6 +93,7 @@ class Sidebar extends React.PureComponent {
         </li>
       );
     }
+
     return (
       <li onClick={this.hideMenu} onMouseOver={this.prefetch(to)}>
         <Link href={to}><a>{children}</a></Link>
@@ -145,7 +146,7 @@ class Sidebar extends React.PureComponent {
                   <Li to="/features/keyboard">Keyboard</Li>
                   <Li to="/features/gamepad">Gamepad</Li>
                   <Li to="/features/server">Server Mode</Li>
-                  <Li to="/features/recording">Recoerding</Li>
+                  <Li to="/features/recording">Recording</Li>
                 </ul>
               </ul>
             </li>

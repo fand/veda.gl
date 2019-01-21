@@ -5,6 +5,7 @@ export default () => {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
     return null;
   }
+
   if (window.veda) {
     return window.veda;
   }

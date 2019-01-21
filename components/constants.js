@@ -5,7 +5,7 @@ export default {
   mobile: 767,
   pc: 768,
   og: {
-    title: `VEDA - VJ app for Atom #VEDAJS #GLSL`,
+    title: 'VEDA - VJ app for Atom #VEDAJS #GLSL',
     description: `
   VEDA is a GLSL runtime environment for Atom.
   It's just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.

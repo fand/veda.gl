@@ -24,6 +24,7 @@ class Shader extends React.Component {
     if (window.innerWidth <= constants.mobile) {
       return DEFAULT_SHADER;
     }
+
     return this.props.shader || DEFAULT_SHADER;
   }
 
@@ -34,6 +35,7 @@ class Shader extends React.Component {
       if (shader.attach) {
         shader.attach(veda);
       }
+
       veda.play();
     }, 0);
   }
