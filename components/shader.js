@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import constants from 'constants';
 import getVeda from './veda';
 
@@ -12,7 +12,7 @@ const DEFAULT_SHADER = {
 };
 
 // eslint-disable-next-line
-injectGlobal`
+createGlobalStyle`
   body {
     background: black;
   }

@@ -130,7 +130,7 @@ class Layout extends React.Component {
             <HeaderWrapper>
               <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={this.title()}/>
             </HeaderWrapper>
-            <MainWrapper className="body" innerRef={this.setBody}>
+            <MainWrapper ref={this.setBody} className="body">
               {this.props.children}
             </MainWrapper>
           </BodyColumn>

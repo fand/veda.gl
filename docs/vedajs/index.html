@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="jsx-3345463421"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/vedajs.js" as="script"/><link rel="preload" href="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/_app.js" as="script"/><link rel="preload" href="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/_error.js" as="script"/><link rel="preload" href="/_next/static/commons/main-4ca77e1633313f4f3a79.js" as="script"/><style id="__jsx-3345463421">/*! sanitize.css v6.0.0 | CC0 License | github.com/csstools/sanitize.css */
+<!DOCTYPE html><html lang="en" class="jsx-2126149371"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/vedajs.js" as="script"/><link rel="preload" href="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/_app.js" as="script"/><link rel="preload" href="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/_error.js" as="script"/><link rel="preload" href="/_next/static/runtime/webpack-42652fa8b82c329c0559.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.6a704e22fbd781a6ebcc.js" as="script"/><link rel="preload" href="/_next/static/runtime/main-3517a3deedd0b9836efd.js" as="script"/><style id="__jsx-2126149371">/*! sanitize.css v7.0.3 | CC0 License | github.com/csstools/sanitize.css */
 
 /* Document
  * ========================================================================== */
@@ -27,19 +27,37 @@
 }
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Add the default cursor in all browsers (opinionated).
- * 3. Prevent adjustments of font size after orientation changes in
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Use the default user interface font in all browsers (opinionated).
+ * 3. Correct the line height in all browsers.
+ * 4. Use a 4-space tab width in all browsers (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
- * 4. Breaks words to prevent prevent overflow in all browsers (opinionated).
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
  */
 
 html {
-  line-height: 1.15; /* 1 */
-  cursor: default; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
-  word-break: break-word; /* 4 */
+  cursor: default; /* 1 */
+  font-family:
+    system-ui,
+    /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ Segoe UI,
+    /* Android 4+ */ Roboto,
+    /* Ubuntu 10.10+ */ Ubuntu,
+    /* Gnome 3+ */ Cantarell,
+    /* KDE Plasma 5+ */ Noto Sans,
+    /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji"; /* 2 */
+
+  line-height: 1.15; /* 3 */
+  -moz-tab-size: 4; /* 4 */
+  tab-size: 4; /* 4 */
+  -ms-text-size-adjust: 100%; /* 5 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+  word-break: break-word; /* 6 */
 }
 
 /* Sections
@@ -67,12 +85,11 @@ h1 {
  * ========================================================================== */
 
 /**
- * 1. Add the correct box sizing in Firefox.
+ * 1. Add the correct sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -95,12 +112,22 @@ nav ul {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family:
+    /* macOS 10.10+ */ Menlo,
+    /* Windows 6+ */ Consolas,
+    /* Android 4+ */ Roboto Mono,
+    /* Ubuntu 10.10+ */ Ubuntu Monospace,
+    /* KDE Plasma 5+ */ Noto Mono,
+    /* KDE Plasma 4+ */ Oxygen Mono,
+    /* Linux/OpenOffice fallback */ Liberation Mono,
+    /* fallback */ monospace; /* 1 */
+
   font-size: 1em; /* 2 */
 }
 
@@ -134,14 +161,24 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family:
+    /* macOS 10.10+ */ Menlo,
+    /* Windows 6+ */ Consolas,
+    /* Android 4+ */ Roboto Mono,
+    /* Ubuntu 10.10+ */ Ubuntu Monospace,
+    /* KDE Plasma 5+ */ Noto Mono,
+    /* KDE Plasma 4+ */ Oxygen Mono,
+    /* Linux/OpenOffice fallback */ Liberation Mono,
+    /* fallback */ monospace; /* 1 */
+
   font-size: 1em; /* 2 */
 }
 
@@ -217,7 +254,7 @@ img {
  * Change the fill color to match the text color in all browsers (opinionated).
  */
 
-svg {
+svg:not([fill]) {
   fill: currentColor;
 }
 
@@ -244,18 +281,6 @@ table {
  * ========================================================================== */
 
 /**
- * Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
-}
-
-/**
  * Inherit styling in all browsers (opinionated).
  */
 
@@ -266,6 +291,16 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+/**
+ * Remove the margin in Safari.
+ */
+
+button,
+input,
+select {
+  margin: 0;
 }
 
 /**
@@ -290,26 +325,6 @@ button,
 }
 
 /**
- * Restore the focus styles unset by the previous rule in Firefox.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
  * Correct the padding in Firefox.
  */
 
@@ -328,16 +343,12 @@ input {
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
 
@@ -360,33 +371,24 @@ select {
 }
 
 /**
- * 1. Remove the default vertical scrollbar in IE.
- * 2. Change the resize direction on textareas in all browsers (opinionated).
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction on textareas in all browsers (opinionated).
  */
 
 textarea {
-  overflow: auto; /* 1 */
-  resize: vertical; /* 2 */
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
+  resize: vertical; /* 3 */
 }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
+ * Remove the padding in IE 10-.
  */
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
+  padding: 0;
 }
 
 /**
@@ -397,6 +399,24 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
 }
 
 /**
@@ -415,6 +435,23 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /* Interactive
@@ -485,8 +522,9 @@ template {
  * ========================================================================== */
 
 /*
- * 1. Remove the tapping delay on clickable elements in all browsers (opinionated).
- * 2. Remove the tapping delay in IE 10.
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
  */
 
 a,
@@ -534,9 +572,9 @@ textarea,
  * inoperable elements in all browsers (opinionated).
  */
 
-[aria-disabled],
+[aria-disabled="true"],
 [disabled] {
-  cursor: disabled;
+  cursor: not-allowed;
 }
 
 /*
@@ -717,13 +755,13 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 .pc-only{font-style:italic;}
 .pc-only button{cursor:pointer;}
 @media (mac-width:767px){.pc-only{display:none;}}</style><style id="__jsx-3028101459">article.jsx-3028101459{width:90%;max-width:680px;margin:20px auto 120px;padding:0;overflow:hidden;}
-@media (max-width:767px){article.jsx-3028101459{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-3345463421"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-3345463421"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-3345463421"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-3345463421"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-3345463421"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-3345463421"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" class="jsx-3345463421"/><meta data-react-helmet="true" name="Description" content="VEDA is a GLSL runtime environment for Atom.
+@media (max-width:767px){article.jsx-3028101459{margin-top:60px;}}</style><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" class="jsx-2126149371"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" class="jsx-2126149371"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" class="jsx-2126149371"/><link data-react-helmet="true" rel="manifest" href="/static/favicons/manifest.json" class="jsx-2126149371"/><link data-react-helmet="true" rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:descripton"/><meta data-react-helmet="true" charSet="utf-8" class="jsx-2126149371"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge" class="jsx-2126149371"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" class="jsx-2126149371"/><meta data-react-helmet="true" name="Description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/vedajs" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:title" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:url" content="https://veda.gl/vedajs" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:type" content="website" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:title" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:image" content="/static/images/logo_720h.png" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:site_name" content="VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3345463421"/><meta data-react-helmet="true" property="og:locale" content="en_US" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:card" content="summary" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:site" content="@amagitakayosi" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:creator" content="@amagitakayosi" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:url" content="https://veda.gl/vedajs" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:title" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:description" content="VEDA is a GLSL runtime environment for Atom.
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:site_name" content="VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2126149371"/><meta data-react-helmet="true" property="og:locale" content="en_US" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:card" content="summary" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:site" content="@amagitakayosi" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:creator" content="@amagitakayosi" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:url" content="https://veda.gl/vedajs" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:title" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:description" content="VEDA is a GLSL runtime environment for Atom.
   It&#x27;s just like GLSL sandbox or Shadertoy, but you can use autocomplete and linter by using existing Atom packages.
-  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-3345463421"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-3345463421"/><meta data-react-helmet="true" itemProp="name" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3345463421"/><meta data-react-helmet="true" itemProp="description" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-3345463421"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-3345463421"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-3345463421"/><title data-react-helmet="true" class="jsx-3345463421">VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style data-styled-components="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz kcQdHk foianw hqfmhS ezeMFs hYIZGZ eYewVt">
+  Moreover, It supports Audio inputs , MIDI inputs, loading videos and images, etc...!!!!" class="jsx-2126149371"/><meta data-react-helmet="true" name="twitter:image" content="/static/images/logo_720h.png" class="jsx-2126149371"/><meta data-react-helmet="true" itemProp="name" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2126149371"/><meta data-react-helmet="true" itemProp="description" content="VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL" class="jsx-2126149371"/><meta data-react-helmet="true" itemProp="image" content="/static/images/logo_720h.png" class="jsx-2126149371"/><meta data-react-helmet="true" name="theme-color" content="#ffffff" class="jsx-2126149371"/><title data-react-helmet="true" class="jsx-2126149371">VEDA.js | VEDA - VJ app for Atom #VEDAJS #GLSL</title><style data-styled="dJarlS eBDwdW jegVTl PwCm kNzHoA diPhsz kcQdHk foianw hqfmhS ezeMFs hYIZGZ eYewVt" data-styled-version="4.1.3">
 /* sc-component-id: sidebar__Nav-s1mu56oo-0 */
 .jegVTl{width:100%;height:100%;padding:10px 20px 100px;background:rgba(10,10,10,0.6);border-right:1px solid rgb(24,26,31);text-shadow:0 2px 5px black;overflow:auto;} .jegVTl *{font-weight:400;} .jegVTl h4{margin:1em 0 0;font-weight:700;} .jegVTl ul{padding-left:0;margin:0;} .jegVTl li{display:block;width:100%;line-height:2.5em;} .jegVTl li.active{box-shadow:-200px 0 0 black,200px 0 0 black;background:black;} .jegVTl li.active *{font-weight:700;} .jegVTl li a{display:block;-webkit-text-decoration:none;text-decoration:none;color:#FFFFFF;} .jegVTl li a:hover{color:#88eeff;-webkit-text-decoration:underline;text-decoration:underline;} .jegVTl li a:visited{color:#FFFFFF;}
 /* sc-component-id: sidebar__Header-s1mu56oo-1 */
@@ -738,8 +776,6 @@ code{padding:2px 4px;background:black;font-family:Courier,monospace !important;}
 .hYIZGZ{position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;right:0;}
 /* sc-component-id: header__Button-hd5umw-4 */
 .ezeMFs{cursor:pointer;color:#DDD;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;} .ezeMFs > img{display:block;width:56px;height:56px;padding:15px;font-size:24px;line-height:27px;} .ezeMFs span{padding:15px;position:relative;display:block;top:-1em;} .ezeMFs:hover{opacity:1;color:#FFF;} .ezeMFs .inner{position:absolute;top:100%;right:0;background:rgba(0,0,0,0.8);color:#FFF;text-align:center;display:none;opacity:0;-webkit-transition:opacity 0.5s;transition:opacity 0.5s;} .ezeMFs .inner a{-webkit-text-decoration:none;text-decoration:none;color:white;} .ezeMFs .inner a:hover{-webkit-text-decoration:underline;text-decoration:underline;} .ezeMFs .inner i{margin-right:10px;text-align:center;} .ezeMFs .inner.visible{width:180px;display:block;opacity:1;} .ezeMFs .inner:before{content:'';position:absolute;top:-30px;right:12px;border:15px solid transparent;border-bottom:15px solid black;}
-/* sc-component-id: sc-global-2342261191 */
-body{background:black;}
 /* sc-component-id: layout__Wrapper-s1r8im8e-0 */
 .dJarlS{position:fixed;top:0;left:0;height:100%;width:100%;overflow:visible;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transition:left 0.3s;transition:left 0.3s;} @media (max-width:767px){.dJarlS{width:auto;left:-82vw;}.dJarlS.menu{left:0;}}
 /* sc-component-id: layout__SidebarWrapper-s1r8im8e-1 */
@@ -755,7 +791,7 @@ l=e.getElementsByTagName(a)[0];g.src='https://www.google-analytics.com/analytics
 l.parentNode.insertBefore(g,l)}(window,document,'ga','script');
 
 ga('create', 'UA-41787635-14', 'auto');
-ga('send', 'pageview');</script></head><body><div id="__next"><div><div class="jsx-3345463421"><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-3345463421"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png" alt="VEDA Header"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="/static/images/shield_dummy.png"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><li><ul style="text-indent:20px"><li><a href="/install/">Install</a></li><li><a href="/usage/">Usage</a></li><li><a href="/commands/">Commands</a></li><li><a href="/settings/">Settings</a></li><li><a href="/features/">Features</a></li><ul style="text-indent:40px"><li><a href="/features/fragment/">Fragment Shaders</a></li><li><a href="/features/vertex/">Vertex Shaders</a></li><li><a href="/features/image/">Images &amp; Videos</a></li><li><a href="/features/audio/">Audio</a></li><li><a href="/features/midi/">MIDI</a></li><li><a href="/features/osc/">OSC</a></li><li><a href="/features/webcam/">WebCam</a></li><li><a href="/features/keyboard/">Keyboard</a></li><li><a href="/features/gamepad/">Gamepad</a></li><li><a href="/features/server/">Server Mode</a></li></ul></ul></li><li class="active">VEDA.js</li><li><a href="/faq/">FAQ</a></li><li><a href="/contributing/">CONTRIBUTING</a></li></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 kcQdHk"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png" alt="VEDA logo"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png" alt="Menu"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3028101459"><div align="center">
+ga('send', 'pageview');</script></head><body><div id="__next"><div><div class="jsx-2126149371"><script async="" src="https://platform.twitter.com/widgets.js" class="jsx-2126149371"></script></div><div class="layout__Wrapper-s1r8im8e-0 dJarlS"><div class="layout__SidebarWrapper-s1r8im8e-1 eBDwdW"><nav class="sidebar__Nav-s1mu56oo-0 jegVTl"><div class="sidebar__Header-s1mu56oo-1 PwCm"><a href="/"><img class="logo" src="/static/images/logo_header.png" alt="VEDA Header"/></a><div class="banners"><a class="github" target="\_blank" href="https://github.com/fand/veda"><img alt="GitHub Stars" src="/static/images/shield_dummy.png"/></a><a class="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&amp;q=%23vedajs&amp;src=typd"><img alt="hashtag #vedajs" src="/static/images/hashtag.png"/></a></div></div><ul><li>VEDA for Atom</li><li><ul style="text-indent:20px"><li><a href="/install/">Install</a></li><li><a href="/usage/">Usage</a></li><li><a href="/commands/">Commands</a></li><li><a href="/settings/">Settings</a></li><li><a href="/features/">Features</a></li><ul style="text-indent:40px"><li><a href="/features/fragment/">Fragment Shaders</a></li><li><a href="/features/vertex/">Vertex Shaders</a></li><li><a href="/features/image/">Images &amp; Videos</a></li><li><a href="/features/audio/">Audio</a></li><li><a href="/features/midi/">MIDI</a></li><li><a href="/features/osc/">OSC</a></li><li><a href="/features/webcam/">WebCam</a></li><li><a href="/features/keyboard/">Keyboard</a></li><li><a href="/features/gamepad/">Gamepad</a></li><li><a href="/features/server/">Server Mode</a></li></ul></ul></li><li class="active">VEDA.js</li><li><a href="/faq/">FAQ</a></li><li><a href="/contributing/">CONTRIBUTING</a></li></ul></nav></div><div class="layout__BodyColumn-s1r8im8e-2 kNzHoA"><div class="layout__HeaderWrapper-s1r8im8e-4 diPhsz"><div class="header__Nav-hd5umw-0 kcQdHk"><div class="header__Logo-hd5umw-1 foianw"><a href="/"><img src="/static/images/logo_header.png" alt="VEDA logo"/></a></div><div class="header__Left-hd5umw-2 hqfmhS"><div class="mobile header__Button-hd5umw-4 ezeMFs"><img src="/static/images/i_menu.png" alt="Menu"/></div></div><div class="header__Right-hd5umw-3 hYIZGZ"><div class="header__Button-hd5umw-4 ezeMFs"><span>日本語</span></div></div></div></div><main class="body layout__MainWrapper-s1r8im8e-3 eYewVt"><article class="jsx-3028101459"><div align="center">
   <img alt="logo" src="/static/images/logo_720h.png" width="192"/>
 
   <h1>VEDA.js</h1>
@@ -765,7 +801,7 @@ ga('send', 'pageview');</script></head><body><div id="__next"><div><div class="j
 </div>
 
 
-<h2 id="what-is-veda-js-">What is VEDA.js?</h2>
+<h2 id="what-is-vedajs">What is VEDA.js?</h2>
 <p>VEDA.js is a JavaScript framework to run GLSL shaders on browsers.<br>It was originally created as a GLSL engine of <a href="https://atom.io/packages/veda">VEDA</a>, but we realized that it&#39;s useful to run shaders on browsers so published VEDA.js as a standalone library.</p>
 <h2 id="install">Install</h2>
 <p>You can install VEDA.js with <code>npm</code> or <code>yarn</code>.</p>
@@ -826,19 +862,4 @@ veda.loadShader(shader);</code></pre>
 </ul>
 <h2 id="license">LICENSE</h2>
 <p>MIT</p>
-</article></main></div></div></div></div><div id="__next-error"></div><script>
-          __NEXT_DATA__ = {"props":{"store":{"sagaTask":{"@@redux-saga/TASK":true,"id":31,"name":"g","joiners":null,"done":{}}},"isServer":true,"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false},"initialProps":{"pageProps":{}}},"page":"/vedajs","pathname":"/vedajs","query":{},"buildId":"fd8f3493-1855-49fc-bc8d-5c7c839b57ab","assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
-          module={}
-          __NEXT_LOADED_PAGES__ = []
-          __NEXT_LOADED_CHUNKS__ = []
-
-          __NEXT_REGISTER_PAGE = function (route, fn) {
-            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
-          }
-
-          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
-            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
-          }
-
-          false
-        </script><script async="" id="__NEXT_PAGE__/vedajs" src="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/vedajs.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/_next/fd8f3493-1855-49fc-bc8d-5c7c839b57ab/page/_error.js"></script><script src="/_next/static/commons/main-4ca77e1633313f4f3a79.js" async=""></script></body></html>
+</article></main></div></div></div></div><script>__NEXT_DATA__ = {"props":{"isServer":true,"initialState":{"lang":"en","isMenuVisible":false,"isHeaderVisible":false},"initialProps":{"pageProps":{}}},"page":"/vedajs","query":{},"buildId":"9RwFZDwmXC6N45YP6TCY1","nextExport":true};__NEXT_LOADED_PAGES__=[];__NEXT_REGISTER_PAGE=function(r,f){__NEXT_LOADED_PAGES__.push([r, f])}</script><script async="" id="__NEXT_PAGE__/vedajs" src="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/vedajs.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/_next/static/9RwFZDwmXC6N45YP6TCY1/pages/_error.js"></script><script src="/_next/static/runtime/webpack-42652fa8b82c329c0559.js" async=""></script><script src="/_next/static/chunks/commons.6a704e22fbd781a6ebcc.js" async=""></script><script src="/_next/static/runtime/main-3517a3deedd0b9836efd.js" async=""></script></body></html>
