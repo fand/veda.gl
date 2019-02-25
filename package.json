@@ -15,7 +15,7 @@
     "eslint-config-xo-react": "^0.18.0",
     "eslint-plugin-react": "7.12.4",
     "frontmatter": "^0.0.3",
-    "highlight.js": "^9.13.1",
+    "highlight.js": "^9.15.2",
     "isomorphic-unfetch": "^3.0.0",
     "marked": "^0.6.0",
     "next": "^7.0.2",
