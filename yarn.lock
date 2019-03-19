@@ -6019,10 +6019,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vedajs@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.9.1.tgz#3ab25687308056a68c31a156665dd8946624ee4d"
-  integrity sha512-5ZHnNt9Gpr55c5o96qGacWFgfE34X6hAwyHWzvUoJeOxxrW0wj4IfVBRo8a0JvCYa6gNAN6QIGlutVu5BpefmQ==
+vedajs@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.10.0.tgz#8d31418b693f81dff2c21bd18f988a0f68c9e265"
+  integrity sha512-sAR8um6jB7P+Nc9qaVCaPEdm1uIigKODitkcq/mMGvrt4QSfKijyrNrgd6K6d1CTG7I3b7q9j9SutsQfAmygQQ==
   dependencies:
     is-video "^1.0.1"
     three "^0.100.0"
