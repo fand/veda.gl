@@ -17,7 +17,7 @@
     "frontmatter": "^0.0.3",
     "highlight.js": "^9.13.1",
     "isomorphic-unfetch": "^3.0.0",
-    "marked": "^0.6.0",
+    "marked": "^0.6.2",
     "next": "^7.0.2",
     "next-redux-saga": "^3.0.0",
     "next-redux-wrapper": "^2.1.0",
