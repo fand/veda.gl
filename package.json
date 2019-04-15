@@ -45,6 +45,6 @@
     "next-workbox": "^1.4.1",
     "redux-devtools-extension": "^2.13.7",
     "redux-thunk": "^2.3.0",
-    "workbox-cli": "^3.6.3"
+    "workbox-cli": "^4.3.0"
   }
 }
