@@ -4079,10 +4079,10 @@ neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
 
-next-redux-saga@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/next-redux-saga/-/next-redux-saga-3.0.0.tgz#8a934483fc48149ff1fd6f091fbbbf884fd2883b"
-  integrity sha512-uc7CgbS03sZUQEdlkiUEP5J/ZGRMvq417BPYD5x7qqyowCyeus3Gtooo801vCM1PvSHlv/WU8BqoQX1cYzhCpg==
+next-redux-saga@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/next-redux-saga/-/next-redux-saga-4.0.2.tgz#050a0d00342bd9d9ef30b208caa31be7ba397810"
+  integrity sha512-XvysE2/cI2MpB59lksx3+oaD3sHzwspH5St6bowXxyxhGhZaQD0RFmRHzHyZmyrTZqIeX5TflerZ6C9ppLr7kw==
 
 next-redux-wrapper@^2.1.0:
   version "2.1.0"
