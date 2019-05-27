@@ -28,4 +28,4 @@ class MyApp extends App {
   }
 }
 
-export default withRedux(createStore)(withReduxSaga({ async: true })(MyApp));
+export default withRedux(createStore)(withReduxSaga(MyApp));
