@@ -42,6 +42,7 @@
     "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.16.0",
     "eslint-config-xo": "0.26.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "next-workbox": "1.4.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "2.3.0",
