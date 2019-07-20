@@ -26,280 +26,268 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/_app.js",
-    "revision": "ba77ef1f89a6dad0dcb803d18c2e73ed"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/_error.js",
-    "revision": "5cee781479a71a1905eda34738220046"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/commands.js",
-    "revision": "ed13c238ad6a7e78b3de0607b27ca640"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/contributing.js",
-    "revision": "b76a7f7611e2215fe1983f2022a1345d"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/faq.js",
-    "revision": "9b81667e9d46239482f6d7e34a184529"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features.js",
-    "revision": "40e11f98bcc8e7a52d7a4160b5549121"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/audio.js",
-    "revision": "1645f5f2b26dedf0c00ee3a4ae361b0f"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/fragment.js",
-    "revision": "2c8011dabcaee8154a9de098b34cf03c"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/gamepad.js",
-    "revision": "74c0d40deef1e5454af3ef054f31ac3b"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/image.js",
-    "revision": "226493a5c5b5f391bef5f57e867acd03"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/keyboard.js",
-    "revision": "64fce9e2da6e32a379f16808cd53ef1e"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/midi.js",
-    "revision": "06edafbe5cbedf69b7f17c4440dedf90"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/osc.js",
-    "revision": "e01fcc4ab9bc7f437fb71e127da9d3b8"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/recording.js",
-    "revision": "4fedd213f4d832c91364fea7779de6ea"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/server.js",
-    "revision": "fc04b75a4fd9fe2a46c80d1000c4858a"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/vertex.js",
-    "revision": "0cbd4a8d95c8d42311db707a9b9747bc"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/video.js",
-    "revision": "8e509ec16dd0ee054465da1fafbcf3f9"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/features/webcam.js",
-    "revision": "d1871c0436a393a8b57ccf1ca5220ad1"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/index.js",
-    "revision": "d415aa9bb6c7d3400b3ec272142f5889"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/install.js",
-    "revision": "39d2df060f6094f72896303efa130b5f"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/parse.js",
-    "revision": "2f247073a343265a8d432097894b7144"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/settings.js",
-    "revision": "2964a5cd5864fdbfb2ce987d27d8561d"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/usage.js",
-    "revision": "e953756f62f2eb087e92790ec230f3dc"
-  },
-  {
-    "url": "_next/static/5VTHJ2-fuizRbCxRC3DgO/pages/vedajs.js",
-    "revision": "279b82442710bb96727f2649f8431c77"
-  },
-  {
-    "url": "_next/static/chunks/commons.f1f9c01637bfe6a20c60.js",
-    "revision": "72781f26fbe138f7718ee486055e6e53"
-  },
-  {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/_app.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/_app.js",
     "revision": "d030a8eeae077837ea39909c5450ee62"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/_error.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/_error.js",
     "revision": "5cee781479a71a1905eda34738220046"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/commands.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/commands.js",
     "revision": "ed13c238ad6a7e78b3de0607b27ca640"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/contributing.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/contributing.js",
     "revision": "b76a7f7611e2215fe1983f2022a1345d"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/faq.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/faq.js",
     "revision": "9b81667e9d46239482f6d7e34a184529"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features.js",
     "revision": "40e11f98bcc8e7a52d7a4160b5549121"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/audio.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/audio.js",
     "revision": "1645f5f2b26dedf0c00ee3a4ae361b0f"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/fragment.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/fragment.js",
     "revision": "2c8011dabcaee8154a9de098b34cf03c"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/gamepad.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/gamepad.js",
     "revision": "74c0d40deef1e5454af3ef054f31ac3b"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/image.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/image.js",
     "revision": "226493a5c5b5f391bef5f57e867acd03"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/keyboard.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/keyboard.js",
     "revision": "64fce9e2da6e32a379f16808cd53ef1e"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/midi.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/midi.js",
     "revision": "06edafbe5cbedf69b7f17c4440dedf90"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/osc.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/osc.js",
     "revision": "e01fcc4ab9bc7f437fb71e127da9d3b8"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/recording.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/recording.js",
     "revision": "4fedd213f4d832c91364fea7779de6ea"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/server.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/server.js",
     "revision": "fc04b75a4fd9fe2a46c80d1000c4858a"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/vertex.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/vertex.js",
     "revision": "0cbd4a8d95c8d42311db707a9b9747bc"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/video.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/video.js",
     "revision": "8e509ec16dd0ee054465da1fafbcf3f9"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/features/webcam.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/features/webcam.js",
     "revision": "d1871c0436a393a8b57ccf1ca5220ad1"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/index.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/index.js",
     "revision": "d415aa9bb6c7d3400b3ec272142f5889"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/install.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/install.js",
     "revision": "39d2df060f6094f72896303efa130b5f"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/parse.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/parse.js",
     "revision": "2f247073a343265a8d432097894b7144"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/settings.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/settings.js",
     "revision": "2964a5cd5864fdbfb2ce987d27d8561d"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/usage.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/usage.js",
     "revision": "e953756f62f2eb087e92790ec230f3dc"
   },
   {
-    "url": "_next/static/ouLBcks10gmm7ZL_EI4rf/pages/vedajs.js",
+    "url": "_next/static/C6RhVLwEHvI4zW5TXDd65/pages/vedajs.js",
     "revision": "279b82442710bb96727f2649f8431c77"
+  },
+  {
+    "url": "_next/static/chunks/0.js",
+    "revision": "a72c707134870212974b68a7372c06f4"
+  },
+  {
+    "url": "_next/static/chunks/commons.fddad68eec4b90c3ba18.js",
+    "revision": "ee10a15e28e00e9a0978cd3eefe136d3"
+  },
+  {
+    "url": "_next/static/development/dll/dll_aa8f31c0c93a8f34edc5.js",
+    "revision": "315d6f1b0d40a35d1574c722a8c86381"
+  },
+  {
+    "url": "_next/static/development/pages/_app.js",
+    "revision": "2c626eb251570003a7aeca0ac22db40d"
+  },
+  {
+    "url": "_next/static/development/pages/_error.js",
+    "revision": "77d51aca27edb9e7309ccab1a1144d27"
+  },
+  {
+    "url": "_next/static/development/pages/commands.js",
+    "revision": "e76e54f489648c7610b758a0700c6c65"
+  },
+  {
+    "url": "_next/static/development/pages/features.js",
+    "revision": "e4a32b294d5e4d33a9a7dd3905224127"
+  },
+  {
+    "url": "_next/static/development/pages/features/gamepad.js",
+    "revision": "69d20731ed485f9e139c1993cd1553f9"
+  },
+  {
+    "url": "_next/static/development/pages/index.js",
+    "revision": "68457228f06145b1adae267055d40543"
+  },
+  {
+    "url": "_next/static/development/pages/install.js",
+    "revision": "669f46628f677fcff1d1c5b3d2fd7bc4"
+  },
+  {
+    "url": "_next/static/development/pages/settings.js",
+    "revision": "618359ba3c4602d8e12dbbe233777726"
+  },
+  {
+    "url": "_next/static/development/pages/usage.js",
+    "revision": "3ed4422120e91361079d2318e3f7487d"
+  },
+  {
+    "url": "_next/static/runtime/amp.js",
+    "revision": "4e1f8a488c2e23ace0faa5c87e8785fe"
   },
   {
     "url": "_next/static/runtime/main-0df88d6239c8399435bb.js",
     "revision": "38649f2fcd26373b155901d53550a651"
   },
   {
+    "url": "_next/static/runtime/main.js",
+    "revision": "27ff06fa520ffeb93a56bc6529ace6ec"
+  },
+  {
     "url": "_next/static/runtime/webpack-a79426b5e11f0ba5879d.js",
     "revision": "e530d478b947cd756a8ea9941726e6bb"
   },
   {
+    "url": "_next/static/runtime/webpack.js",
+    "revision": "39df8b7df7c8da384d74a0e1d1e330e7"
+  },
+  {
+    "url": "_next/static/webpack/351f329f10d923e92eae.hot-update.json",
+    "revision": "fd70baa7d4963ea907db344009c889b8"
+  },
+  {
+    "url": "_next/static/webpack/6e655262ca45d0fbb2ae.hot-update.json",
+    "revision": "02bb444638a1a25f45c2cba9d9b7622c"
+  },
+  {
+    "url": "_next/static/webpack/72a4b4f3609b37e6dac8.hot-update.json",
+    "revision": "49bd9c3fe76904f3b3b084f66cc41dad"
+  },
+  {
+    "url": "_next/static/webpack/a643d65fbf45f5bf0835.hot-update.json",
+    "revision": "c39de2773fdb36d6f2fcfa11835a350b"
+  },
+  {
+    "url": "_next/static/webpack/cba8bfc0d3d815d67fc1.hot-update.json",
+    "revision": "4130ba24b39ab062b9ea1dcf45d4a28d"
+  },
+  {
+    "url": "_next/static/webpack/dc450169cb7fa9f56107.hot-update.json",
+    "revision": "230ab31560e28da4846a59c41743ce5b"
+  },
+  {
+    "url": "_next/static/webpack/f749df35a8413486734a.hot-update.json",
+    "revision": "0cde9d6729c262d3198417ce67f555c7"
+  },
+  {
     "url": "commands/index.html",
-    "revision": "ad2bff6fd2d3a87a57fa4a3aaada84b2"
+    "revision": "865befbcda19e0348a726ecdcd0df272"
   },
   {
     "url": "contributing/index.html",
-    "revision": "c0aac928a67163dd24834cdf1ab581f4"
+    "revision": "8de5ac50792d556784fc7452f3208ae7"
   },
   {
     "url": "faq/index.html",
-    "revision": "a7f62bd2955293260bc1698fa57329a2"
+    "revision": "6d60a80b685592e0daa2fd39d0cba5ac"
   },
   {
     "url": "features/audio/index.html",
-    "revision": "cf6bd63640f26be0a4f7ca6c6421f955"
+    "revision": "8b0b251ca1020c087f172b6ecb22c395"
   },
   {
     "url": "features/fragment/index.html",
-    "revision": "855a9f75c620e19b274118810d1843e7"
+    "revision": "fe553b367be1a6f4d3e6754718e734b8"
   },
   {
     "url": "features/gamepad/index.html",
-    "revision": "88faf8c0e1073fbbc40c06e2c81f3d19"
+    "revision": "8f237dfb262b34fa9cc8b12194d55f3f"
   },
   {
     "url": "features/image/index.html",
-    "revision": "0473bc76f7db4e58c49b173e2da67bc5"
+    "revision": "2bde354dbd12c7131af2162bddd2659e"
   },
   {
     "url": "features/index.html",
-    "revision": "93a79973b6151f4f83c85b6f0744bb67"
+    "revision": "bca1a0be2ab21af32bf105b7e49f5b38"
   },
   {
     "url": "features/keyboard/index.html",
-    "revision": "5c83118b0a0cb8a858ababd0d221cf18"
+    "revision": "a8ca81cfdc1553d748f12756459d7df7"
   },
   {
     "url": "features/midi/index.html",
-    "revision": "ab70d1c552a857765c8a3c259d353efa"
+    "revision": "2ab5d9c5b24801c70ad559a0df328280"
   },
   {
     "url": "features/osc/index.html",
-    "revision": "fd253e42b3b75a9afd2069784aa4cda9"
+    "revision": "fd17d378936b0cd5ad20b33cef826dd4"
   },
   {
     "url": "features/recording/index.html",
-    "revision": "86ba5fcd815aed629a3544c615d3ca10"
+    "revision": "247fda9a7c4650234cb80cfb06af2ea1"
   },
   {
     "url": "features/server/index.html",
-    "revision": "cdca4eef676e6df990e3d7d139e90dc1"
+    "revision": "b9a24e0cd8ba13a7b29a012d0fee8e1e"
   },
   {
     "url": "features/vertex/index.html",
-    "revision": "f0b3ea2c1c9fd8e229e22b33be0193ff"
+    "revision": "444a439c7c6fc6f5eea2f9cc371afe5e"
   },
   {
     "url": "features/webcam/index.html",
-    "revision": "40023ac443b9a10ad434e43a00f2e5a8"
+    "revision": "78e5f8ee8bf5043ce245206deeac0db1"
   },
   {
     "url": "index.html",
-    "revision": "f91b1c3d587a8674ce8f33ddfdf67099"
+    "revision": "3614f8e3d5e6977ad2d912cf40fbd594"
   },
   {
     "url": "install/index.html",
-    "revision": "f9ffa7c6fc02657b29c13460e8208516"
+    "revision": "438cded6ff8d044c105e229b8e039896"
   },
   {
     "url": "settings/index.html",
-    "revision": "597c52b1624852a27c666777780c71da"
+    "revision": "c6739070d8f8744597a29fc23c810fd7"
   },
   {
     "url": "static/favicons/android-chrome-192x192.png",
@@ -527,11 +515,11 @@ self.__precacheManifest = [
   },
   {
     "url": "usage/index.html",
-    "revision": "f3e2540d4b21f4be6d460495dfa010a5"
+    "revision": "bb602529da948a472ea4ef2311514a0b"
   },
   {
     "url": "vedajs/index.html",
-    "revision": "9ee82b00504ed742e5ad8137b6a560ab"
+    "revision": "499d5b3acf92a05c33eb7e7ccc88e4fa"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
