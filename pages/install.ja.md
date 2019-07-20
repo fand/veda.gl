@@ -14,46 +14,11 @@ Atomを光らせよう。
 
 ## 1. 事前準備
 
-VEDAは以下のソフトウェアに依存しています。
-まずはこれらをインストールしましょう。
-
-- Python 2.x
-- glslangValidator
-
-
-### Python 2.x
-
 VEDAはNode.jsのネイティブアドオンを利用するため、Python 2系をインストールする必要があります。
-`python -V` を実行して、Pythonのバージョンを確認してください。
+ターミナルで `python -V` を実行して、Pythonのバージョンを確認してください。
 
-既にPython2と3をインストール済みの場合、npmがpython2を参照するように設定します。
+既にPython2と3をインストール済みの場合、npmがPython2を参照するように設定します。
 ターミナルから `npm config set python python2` を実行して下さい。
-
-
-### glslangValidator
-
-`glslangValidator` はGLSLコードを検証するためのソフトウェアです。
-以下のステップに従ってインストールしてください。
-
-
-#### macOS
-
-homebrewで簡単にインストールできます。
-
-`brew install glslang`
-
-
-#### Windows or Linux
-
-WindowsとLinuxの場合、Vulkan SDKをインストールするとglslangValidatorもインストールされます。
-以下のサイトからVulkan SDKを入手してください。
-
-https://www.lunarg.com/vulkan-sdk/
-
-続いて、glslangValidatorがインストールされた場所を環境変数 `PATH` に加える必要があります。
-Windowsの場合、glslangValidatorは `C:\VulkanSDK\( version )\Bin` にインストールされているはずです。
-
-glslangValidator の場所は、VEDAの設定で指定することもできます。
 
 
 ## 2. VEDA本体のインストール

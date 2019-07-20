@@ -14,12 +14,6 @@ If you have any question, feel free to ask on:
 In most cases, one of following will solve the problem.
 
 
-#### `glslangValidator` is not installed
-
-VEDA requires `glslangValidator` to be installed on your PC.
-See [Install](/install#glslangvalidator) for more instruction.
-
-
 #### Python2.x is not installed
 
 VEDA requires Python 2.x to be installed on your PC to build Node.js native add-ons.

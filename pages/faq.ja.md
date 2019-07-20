@@ -14,12 +14,6 @@ title: FAQ
 ほとんどの場合は以下のどれかが原因です。
 
 
-#### `glslangValidator` がインストールされていない
-
-VEDAが動作するには、glslangValidatorがインストールされている必要があります。
-[Install](/install#glslangvalidator)ページに従ってインストールし、パスを通して下さい。
-
-
 #### Python2.xがインストールされていない
 
 VEDAはNode.jsのネイティブアドオンに依存しているため、Python2系が必要です。
