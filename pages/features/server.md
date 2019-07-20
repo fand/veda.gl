@@ -23,4 +23,13 @@ To show the shaders fullscreen, use the features of browsers.
 
 See an [example](./examples/server.frag) for actual usage.
 
-_Warning_: Currently we can't use videos/images outside the project directory in server mode.
+
+
+### Note
+
+Server Mode requires Node.js.
+Please download and install Node.js from here:
+
+https://nodejs.org/ja/
+
+Currently we can't use videos/images outside the project directory in server mode.
