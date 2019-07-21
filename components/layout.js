@@ -1,13 +1,14 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { hideMenu, showHeader, hideHeader } from '../actions';
-import { throttle } from 'lodash';
-import styled from 'styled-components';
-import constants from './constants';
-import Sidebar from './sidebar';
-import Header from './header';
-import Meta from './meta';
-import Shader from './shader';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { hideMenu, showHeader, hideHeader } from "../actions";
+import { throttle } from "lodash";
+import styled from "styled-components";
+import constants from "./constants";
+import Sidebar from "./sidebar";
+import Header from "./header";
+import Meta from "./meta";
+import Shader from "./shader";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -61,28 +62,33 @@ const HeaderWrapper = styled.div`
 
 class Layout extends React.Component {
   static getInitialProps = async ({ pathname }) => ({
-    path: pathname,
+    path: pathname
   });
 
   componentDidMount() {
-    if (process.env.NODE_ENV === 'production') {
-      if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(console.log).catch(console.error);
+    if (process.env.NODE_ENV === "production") {
+      if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(console.log) // eslint-disable-line
+          .catch(console.error); // eslint-disable-line
       }
     }
 
-    this.body.addEventListener('scroll', this.watchScroll);
+    this.body.addEventListener("scroll", this.watchScroll);
     this.watchScroll();
     this.props.dispatch(hideMenu());
   }
 
   componentWillUnmount() {
-    this.body.removeEventListener('scroll', this.watchScroll);
+    this.body.removeEventListener("scroll", this.watchScroll);
   }
 
   watchScroll = throttle(() => {
-    this.props.dispatch(this.body.scrollTop > 100 ? showHeader() : hideHeader());
-  }, 100)
+    this.props.dispatch(
+      this.body.scrollTop > 100 ? showHeader() : hideHeader()
+    );
+  }, 100);
 
   url() {
     return `https://veda.gl${this.props.path}`;
@@ -93,8 +99,9 @@ class Layout extends React.Component {
   }
 
   title() {
-    const article = this.props.article[this.props.lang] || this.props.article.en;
-    return (article.title ? article.title + ' | ' : '') + constants.og.title;
+    const article =
+      this.props.article[this.props.lang] || this.props.article.en;
+    return (article.title ? article.title + " | " : "") + constants.og.title;
   }
 
   description() {
@@ -107,10 +114,10 @@ class Layout extends React.Component {
 
   setBody = el => {
     this.body = el;
-  }
+  };
 
   render() {
-    const sc = this.props.isMenuVisible ? 'menu' : '';
+    const sc = this.props.isMenuVisible ? "menu" : "";
 
     return (
       <div>
@@ -124,21 +131,36 @@ class Layout extends React.Component {
         />
         <Wrapper className={sc}>
           <SidebarWrapper className={sc}>
-            <Sidebar path={this.props.path}/>
+            <Sidebar path={this.props.path} />
           </SidebarWrapper>
           <BodyColumn>
             <HeaderWrapper>
-              <Header path={this.props.path} i18n={!!this.props.article.ja} url={this.url()} title={this.title()}/>
+              <Header
+                path={this.props.path}
+                i18n={!!this.props.article.ja}
+                url={this.url()}
+                title={this.title()}
+              />
             </HeaderWrapper>
             <MainWrapper ref={this.setBody} className="body">
               {this.props.children}
             </MainWrapper>
           </BodyColumn>
         </Wrapper>
-        <Shader shader={this.props.shader}/>
+        <Shader shader={this.props.shader} />
       </div>
     );
   }
 }
+
+Layout.propTypes = {
+  lang: PropTypes.string,
+  path: PropTypes.string,
+  article: PropTypes.any,
+  children: PropTypes.any,
+  shader: PropTypes.string,
+  isMenuVisible: PropTypes.boolean,
+  dispatch: PropTypes.function
+};
 
 export default connect(s => s)(Layout);

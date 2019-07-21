@@ -9,32 +9,5 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "rules": {
-    "indent": ["error", 2],
-    "comma-dangle": ["error", "always-multiline"],
-    "object-curly-spacing": ["error", "always"],
-    "no-mixed-operators": 0,
-    "no-implicit-coercion": 0,
-    "no-negated-condition": 0,
-    "no-useless-escape": 0,
-    "capitalized-comments": 0,
-    "lines-between-class-members": [
-      "error",
-      "always",
-      { "exceptAfterSingleLine": true }
-    ],
-    "react/jsx-indent": ["error", 2],
-    "react/jsx-indent-props": ["error", 2],
-    "react/jsx-handler-names": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/prop-types": 0,
-    "react/forbid-component-props": 0,
-    "react/no-danger": 0,
-    "react/destructuring-assignment": 0,
-    "react/jsx-one-expression-per-line": 0
-  }
+  "parser": "babel-eslint",
 }

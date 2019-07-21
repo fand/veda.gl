@@ -1,14 +1,15 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createGlobalStyle } from 'styled-components';
-import constants from 'constants';
-import getVeda from './veda';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { createGlobalStyle } from "styled-components";
+import constants from "constants";
+import getVeda from "./veda";
 
-import frag from '../pages/index.frag';
+import frag from "../pages/index.frag";
 const DEFAULT_SHADER = {
   attach(veda) {
     veda.loadFragmentShader(frag);
-  },
+  }
 };
 
 // eslint-disable-next-line
@@ -53,5 +54,9 @@ class Shader extends React.Component {
     return null;
   }
 }
+
+Shader.propTypes = {
+  shader: PropTypes.string
+};
 
 export default connect(s => s)(Shader);

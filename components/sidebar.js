@@ -1,18 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import Router from 'next/router';
-import LazyLoad from 'react-lazyload';
-import constants from './constants';
-import { connect } from 'react-redux';
-import { hideMenu } from '../actions';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Link from "next/link";
+import Router from "next/router";
+import LazyLoad from "react-lazyload";
+import constants from "./constants";
+import { connect } from "react-redux";
+import { hideMenu } from "../actions";
 
 const Nav = styled.nav`
   width: 100%;
   height: 100%;
   padding: 10px 20px 100px;
   background: rgba(10, 10, 10, 0.6);
-  border-right: 1px solid rgb(24,26,31);
+  border-right: 1px solid rgb(24, 26, 31);
   text-shadow: 0 2px 5px black;
   overflow: auto;
   * {
@@ -75,14 +76,14 @@ const Header = styled.div`
 `;
 
 const isActive = (path, to) => {
-  const pathname = (to || '').match(/^([^#\?]*)\??([^#]*)#?(.*)$/)[1];
+  const pathname = (to || "").match(/^([^#?]*)\??([^#]*)#?(.*)$/)[1];
   return path === pathname;
 };
 
 class Sidebar extends React.PureComponent {
-  hideMenu = () => this.props.dispatch(hideMenu())
+  hideMenu = () => this.props.dispatch(hideMenu());
 
-  prefetch = to => () => Router.prefetch(to)
+  prefetch = to => () => Router.prefetch(to);
 
   Li = ({ to, children }) => {
     const { path } = this.props;
@@ -96,10 +97,12 @@ class Sidebar extends React.PureComponent {
 
     return (
       <li onClick={this.hideMenu} onMouseOver={this.prefetch(to)}>
-        <Link href={to}><a>{children}</a></Link>
+        <Link href={to}>
+          <a>{children}</a>
+        </Link>
       </li>
     );
-  }
+  };
 
   render() {
     const { lang } = this.props;
@@ -108,34 +111,57 @@ class Sidebar extends React.PureComponent {
     return (
       <Nav>
         <Header>
-          <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
+          <Link href={lang === "en" ? "/" : `/?lang=${lang}`}>
             <a>
-              <img className="logo" src="/static/images/logo_header.png" alt="VEDA Header"/>
+              <img
+                className="logo"
+                src="/static/images/logo_header.png"
+                alt="VEDA Header"
+              />
             </a>
           </Link>
           <div className="banners">
-            <a className="github" target="\_blank" href="https://github.com/fand/veda">
-              <LazyLoad once placeholder={<img alt="GitHub Stars" src="/static/images/shield_dummy.png"/>}>
-                <img alt="GitHub Stars" src="https://img.shields.io/github/stars/fand/veda.svg?style=social&maxAge=259200"/>
+            <a
+              className="github"
+              target="\_blank"
+              href="https://github.com/fand/veda"
+            >
+              <LazyLoad
+                once
+                placeholder={
+                  <img
+                    alt="GitHub Stars"
+                    src="/static/images/shield_dummy.png"
+                  />
+                }
+              >
+                <img
+                  alt="GitHub Stars"
+                  src="https://img.shields.io/github/stars/fand/veda.svg?style=social&maxAge=259200"
+                />
               </LazyLoad>
             </a>
-            <a className="twitter" target="\_blank" href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd">
-              <img alt="hashtag #vedajs" src="/static/images/hashtag.png"/>
+            <a
+              className="twitter"
+              target="\_blank"
+              href="https://twitter.com/search?f=tweets&q=%23vedajs&src=typd"
+            >
+              <img alt="hashtag #vedajs" src="/static/images/hashtag.png" />
             </a>
           </div>
         </Header>
 
-        {lang === 'en' &&
+        {lang === "en" && (
           <ul>
             <li>VEDA for Atom</li>
             <li>
-              <ul style={{ textIndent: '20px' }}>
+              <ul style={{ textIndent: "20px" }}>
                 <Li to="/install">Install</Li>
                 <Li to="/usage">Usage</Li>
                 <Li to="/commands">Commands</Li>
                 <Li to="/settings">Settings</Li>
                 <Li to="/features">Features</Li>
-                <ul style={{ textIndent: '40px' }}>
+                <ul style={{ textIndent: "40px" }}>
                   <Li to="/features/fragment">Fragment Shaders</Li>
                   <Li to="/features/vertex">Vertex Shaders</Li>
                   <Li to="/features/image">Images & Videos</Li>
@@ -154,19 +180,21 @@ class Sidebar extends React.PureComponent {
             <Li to="/faq">FAQ</Li>
             <Li to="/contributing">CONTRIBUTING</Li>
           </ul>
-        }
-        {lang === 'ja' &&
+        )}
+        {lang === "ja" && (
           <ul>
             <li>VEDA for Atom</li>
             <li>
-              <ul style={{ textIndent: '20px' }}>
+              <ul style={{ textIndent: "20px" }}>
                 <Li to="/install?lang=ja">インストール</Li>
                 <Li to="/usage?lang=ja">操作方法</Li>
                 <Li to="/commands?lang=ja">コマンド</Li>
                 <Li to="/settings?lang=ja">設定</Li>
                 <Li to="/features?lang=ja">機能一覧</Li>
-                <ul style={{ textIndent: '40px' }}>
-                  <Li to="/features/fragment?lang=ja">フラグメントシェーダー</Li>
+                <ul style={{ textIndent: "40px" }}>
+                  <Li to="/features/fragment?lang=ja">
+                    フラグメントシェーダー
+                  </Li>
                   <Li to="/features/vertex?lang=ja">頂点シェーダー</Li>
                   <Li to="/features/image?lang=ja">画像/動画</Li>
                   <Li to="/features/audio?lang=ja">音声入力</Li>
@@ -184,10 +212,16 @@ class Sidebar extends React.PureComponent {
             <Li to="/faq?lang=ja">FAQ</Li>
             <Li to="/contributing?lang=ja">CONTRIBUTING</Li>
           </ul>
-        }
+        )}
       </Nav>
     );
   }
 }
+
+Sidebar.propTypes = {
+  lang: PropTypes.string,
+  path: PropTypes.string,
+  dispatch: PropTypes.any
+};
 
 export default connect(s => s)(Sidebar);

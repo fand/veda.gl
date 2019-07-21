@@ -1,6 +1,7 @@
 ---
 title: Audio Input
 ---
+
 # Audio Input
 
 <p class="pc-only">Click this button to see an example of GLSL using audio inputs.
@@ -23,7 +24,6 @@ This is useful for drawing waveforms.
 This is useful to draw the volume of specific frequency band, such as spectrum visualizer.
 
 `float volume` is the average of all the frequency bands in `spectrum`.
-
 
 See [examples](https://github.com/fand/veda/blob/master/examples/audio.frag) for more details.
 

@@ -1,8 +1,8 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import Helmet from 'react-helmet';
-import { ServerStyleSheet } from 'styled-components';
-import constants from '../components/constants';
+import React from "react";
+import Document, { Head, Main, NextScript } from "next/document";
+import Helmet from "react-helmet";
+import { ServerStyleSheet } from "styled-components";
+import constants from "../components/constants";
 
 export default class extends Document {
   static async getInitialProps(...args) {
@@ -22,19 +22,19 @@ export default class extends Document {
 
   get helmetHeadComponents() {
     return Object.keys(this.props.helmet)
-      .filter(el => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+      .filter(el => el !== "htmlAttributes" && el !== "bodyAttributes")
       .map(el => this.props.helmet[el].toComponent());
   }
 
   get helmetJsx() {
     return (
       <Helmet
-        htmlAttributes={{ lang: 'en' }}
+        htmlAttributes={{ lang: "en" }}
         title={constants.og.title}
         meta={[
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { property: 'og:title', content: constants.og.title },
-          { property: 'og:descripton', content: constants.og.descripton },
+          { name: "viewport", content: "width=device-width, initial-scale=1" },
+          { property: "og:title", content: constants.og.title },
+          { property: "og:descripton", content: constants.og.descripton }
         ]}
       />
     );
@@ -47,11 +47,11 @@ export default class extends Document {
           {this.helmetJsx}
           {this.helmetHeadComponents}
           {this.props.styleTags}
-          <script dangerouslySetInnerHTML={{ __html: constants.ga }}/>
+          <script dangerouslySetInnerHTML={{ __html: constants.ga }} />
         </Head>
         <body {...this.helmetBodyAttrComponents}>
-          <Main/>
-          <NextScript/>
+          <Main />
+          <NextScript />
         </body>
       </html>
     );

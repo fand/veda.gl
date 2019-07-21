@@ -1,6 +1,7 @@
 ---
 title: 音声入力
 ---
+
 # 音声入力
 
 <p class="pc-only">以下のボタンを押すと、音声入力によるGLSL表現のサンプルが再生されます。
@@ -9,17 +10,17 @@ title: 音声入力
 
 </p>
 
-VEDAでは、音声入力からのデータをGLSL上で利用できます。
-[Settings](/settings?lang=ja)で `"audio": true` すると、以下のuniform変数が利用できるようになります。
+VEDA では、音声入力からのデータを GLSL 上で利用できます。
+[Settings](/settings?lang=ja)で `"audio": true` すると、以下の uniform 変数が利用できるようになります。
 
 - `float volume`
 - `sampler2D samples`
 - `sampler2D spectrum`
 
-`sampler2D samples` には、音声入力の直近256サンプルの値が保存されています。
+`sampler2D samples` には、音声入力の直近 256 サンプルの値が保存されています。
 波形の描画などに利用できます。
 
-`sampler2D spectrum` にはFFTの結果が保存されます。
+`sampler2D spectrum` には FFT の結果が保存されます。
 スペクトラムアナライザー等、特定の周波数帯の値を得ることができます。
 
 `float volume` は、`spectrum` における全周波数帯でのボリュームの平均の値です。
@@ -28,7 +29,7 @@ VEDAでは、音声入力からのデータをGLSL上で利用できます。
 
 ## 例
 
-以下はこのページをPCで開いた時に実行されるGLSLコードです。
+以下はこのページを PC で開いた時に実行される GLSL コードです。
 
 ```glsl
 /*{ "audio": true }*/

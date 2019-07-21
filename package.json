@@ -12,6 +12,7 @@
   "author": "fand <fand.gmork@gmail.com> (https://gmork.in/)",
   "license": "MIT",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "eslint-plugin-react": "^7.14.2",
     "frontmatter": "^0.0.3",
     "highlight.js": "^9.15.6",
@@ -20,6 +21,7 @@
     "next": "^8.1.0",
     "next-redux-saga": "^4.0.2",
     "next-redux-wrapper": "^3.0.0-alpha.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
@@ -33,6 +35,7 @@
     "vedajs": "^0.11.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
     "babel-inline-import-loader": "0.1.0",
     "babel-loader": "8.0.6",
     "babel-minify-webpack-plugin": "0.3.1",
