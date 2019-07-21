@@ -1,9 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import constants from './constants';
-import { toggleMenu, setLanguage } from '../actions';
-import { connect } from 'react-redux';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Link from "next/link";
+import constants from "./constants";
+import { toggleMenu, setLanguage } from "../actions";
+import { connect } from "react-redux";
 
 const Nav = styled.div`
   position: relative;
@@ -17,7 +18,11 @@ const Nav = styled.div`
   }
   @media (max-width: ${constants.mobile}px) {
     &.visible {
-      background: linear-gradient(to bottom, rgba(0, 0, 30, 1), rgba(0, 0, 30, 0.5));
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 30, 1),
+        rgba(0, 0, 30, 0.5)
+      );
     }
     .mobile {
       display: block;
@@ -43,7 +48,8 @@ const Logo = styled.div`
     }
   }
 
-  a, img {
+  a,
+  img {
     display: block;
     height: 100%;
     text-decoration: none;
@@ -64,7 +70,7 @@ const Right = styled.div`
 `;
 const Button = styled.div`
   cursor: pointer;
-  color: #DDD;
+  color: #ddd;
   user-select: none;
   & > img {
     display: block;
@@ -82,7 +88,7 @@ const Button = styled.div`
   }
   &:hover {
     opacity: 1;
-    color: #FFF;
+    color: #fff;
   }
 
   .inner {
@@ -90,7 +96,7 @@ const Button = styled.div`
     top: 100%;
     right: 0;
     background: rgba(0, 0, 0, 0.8);
-    color: #FFF;
+    color: #fff;
     text-align: center;
     a {
       text-decoration: none;
@@ -111,8 +117,8 @@ const Button = styled.div`
       display: block;
       opacity: 1;
     }
-    &:before{
-      content: '';
+    &:before {
+      content: "";
       position: absolute;
       top: -30px;
       right: 12px;
@@ -132,45 +138,48 @@ class Header extends React.Component {
 
   toggleMenu = () => {
     this.props.dispatch(toggleMenu());
-  }
+  };
 
   toggleLanguage = () => {
-    this.props.dispatch(setLanguage(this.props.lang === 'en' ? 'ja' : 'en'));
-  }
+    this.props.dispatch(setLanguage(this.props.lang === "en" ? "ja" : "en"));
+  };
 
   render() {
-    const cls = this.props.isHeaderVisible ? 'visible' : '';
+    const cls = this.props.isHeaderVisible ? "visible" : "";
     const { lang } = this.props;
     return (
       <Nav className={cls}>
         <Logo className={cls}>
-          <Link href={lang === 'en' ? '/' : `/?lang=${lang}`}>
+          <Link href={lang === "en" ? "/" : `/?lang=${lang}`}>
             <a>
-              <img src="/static/images/logo_header.png" alt="VEDA logo"/>
+              <img src="/static/images/logo_header.png" alt="VEDA logo" />
             </a>
           </Link>
         </Logo>
 
         <Left>
           <Button className="mobile" onClick={this.toggleMenu}>
-            <img src="/static/images/i_menu.png" alt="Menu"/>
+            <img src="/static/images/i_menu.png" alt="Menu" />
           </Button>
         </Left>
         <Right>
-          {this.props.i18n &&
+          {this.props.i18n && (
             <Button onClick={this.toggleLanguage}>
-              {lang === 'en' &&
-                <span>日本語</span>
-              }
-              {lang === 'ja' &&
-                <span>English</span>
-              }
+              {lang === "en" && <span>日本語</span>}
+              {lang === "ja" && <span>English</span>}
             </Button>
-          }
+          )}
         </Right>
       </Nav>
     );
   }
 }
+
+Header.propTypes = {
+  i18n: PropTypes.any,
+  lang: PropTypes.string,
+  isHeaderVisible: PropTypes.boolean,
+  dispatch: PropTypes.function
+};
 
 export default connect(s => s)(Header);
