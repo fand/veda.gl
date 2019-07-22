@@ -1,9 +1,9 @@
 export const actionTypes = {
-  TOGGLE_MENU: 'TOGGLE_MENU',
-  HIDE_MENU: 'HIDE_MENU',
-  SHOW_HEADER: 'SHOW_HEADER',
-  HIDE_HEADER: 'HIDE_HEADER',
-  SET_LANGUAGE: 'SET_LANGUAGE',
+  TOGGLE_MENU: "TOGGLE_MENU",
+  HIDE_MENU: "HIDE_MENU",
+  SHOW_HEADER: "SHOW_HEADER",
+  HIDE_HEADER: "HIDE_HEADER",
+  SET_LANGUAGE: "SET_LANGUAGE"
 };
 
 export function toggleMenu() {
@@ -25,6 +25,6 @@ export function hideHeader() {
 export function setLanguage(lang) {
   return {
     type: actionTypes.SET_LANGUAGE,
-    lang,
+    lang
   };
 }

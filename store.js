@@ -1,13 +1,13 @@
-import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import createSagaMiddleware from 'redux-saga';
+import { createStore, applyMiddleware } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import createSagaMiddleware from "redux-saga";
 
-import rootReducer, { exampleInitialState } from './reducer';
-import rootSaga from './saga';
+import rootReducer, { exampleInitialState } from "./reducer";
+import rootSaga from "./saga";
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = createSagaMiddleware();
 
-export function configureStore (initialState = exampleInitialState) {
+export function configureStore(initialState = exampleInitialState) {
   const store = createStore(
     rootReducer,
     initialState,
@@ -15,10 +15,10 @@ export function configureStore (initialState = exampleInitialState) {
   );
 
   store.runSagaTask = () => {
-    store.sagaTask = sagaMiddleware.run(rootSaga)
-  }
+    store.sagaTask = sagaMiddleware.run(rootSaga);
+  };
 
-  store.runSagaTask()
+  store.runSagaTask();
   return store;
 }
 
