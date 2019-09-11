@@ -26,7 +26,7 @@ VEDAはNode.jsのネイティブアドオンを利用するため、Python 2系�
 VEDAをAtomの `Settings` タブか、`apm` からインストールできます。
 
 ```bash
-apm install vedajs
+apm install veda
 ```
 
 ---

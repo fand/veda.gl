@@ -27,7 +27,7 @@ Run `npm config set python python2`.
 Then install VEDA from Atom's `Settings` view or by `apm` like this:
 
 ```bash
-apm install vedajs
+apm install veda
 ```
 
 ---
