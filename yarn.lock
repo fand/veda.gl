@@ -840,6 +840,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.3.tgz#6310a047f12d21a1036fb031317219892440416f"
   integrity sha512-4zAPlpDEh2VwXswwr/t8xGNDGg8RQiPxtxZ3qQEXyQsBV39ptTdESCjuBvGze1nLMVrxmTIKmnO/nAV8Tqjjzg==
 
+"@fand/gifuct-js@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fand/gifuct-js/-/gifuct-js-1.0.0.tgz#8e001acdc20b74222805360d42c702409b9e0321"
+  integrity sha512-8jduCVQcvK7L9O+1q/DL/AYPW+PYm4glkS7hkLE9+GSUABfVj62MJv6EbHY6PNbbvyYx8voDLmvB5ppQoIyF9g==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -6594,11 +6599,12 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vedajs@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.12.0.tgz#4491b80c352792008dfa34cc27994c2c6f6de8e2"
-  integrity sha512-zwFGzHb5kfOpTs1zEPr8e65BIdtSmxLJMxlkOHAitZa3svBxK9Y7j2D9LjtQ7QdSMxhUjPy9siOqG4fdJ34+sw==
+vedajs@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/vedajs/-/vedajs-0.13.0.tgz#dc102422d1c8ffdc9eaa42669b3f4bcddedac5d0"
+  integrity sha512-/bOf/bRjLuL0urW7yYR6fSsWLeJphUZggqiu+dg+Ez4R1x30K19G5j4nCCBW7kH2miYB3UrirQJT/xdNGu1J4Q==
   dependencies:
+    "@fand/gifuct-js" "^1.0.0"
     is-video "^1.0.1"
     three "^0.100.0"
     three-mtl-loader "^1.0.2"
