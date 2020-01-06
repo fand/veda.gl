@@ -33,7 +33,7 @@
     "sanitize.css": "^11.0.0",
     "styled-components": "^4.3.2",
     "url-parse": "^1.4.7",
-    "vedajs": "^0.12.0"
+    "vedajs": "^0.13.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
