@@ -41,7 +41,7 @@
     "babel-loader": "8.0.6",
     "babel-minify-webpack-plugin": "0.3.1",
     "babel-plugin-inline-import": "3.0.0",
-    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-styled-components": "1.10.7",
     "eslint": "5.16.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-plugin-prettier": "3.1.2",
