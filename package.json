@@ -50,6 +50,6 @@
     "prettier": "1.19.1",
     "redux-devtools-extension": "2.13.8",
     "redux-thunk": "2.3.0",
-    "workbox-cli": "4.3.1"
+    "workbox-cli": "5.1.3"
   }
 }
