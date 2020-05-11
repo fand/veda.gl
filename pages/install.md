@@ -5,7 +5,7 @@ title: Install VEDA
 
 Let your editor blink!
 
-![](https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif)
+![VEDA example](https://user-images.githubusercontent.com/1403842/28673275-1d42b062-731d-11e7-92b0-bde5ca1f1cae.gif)
 
 <div align="center" style="line-height: 40px;">![GitHub stars](https://img.shields.io/github/stars/fand/veda.svg?style=social)
 ![TravisCI](https://img.shields.io/travis/fand/veda.svg) ![license MIT](https://img.shields.io/apm/dm/veda.svg) ![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)
@@ -13,13 +13,12 @@ Let your editor blink!
 
 
 
-## 1. Install Prerequisites
+## 1. Install Prerequisite
 
-Python 2.x is required to build native add-ons in VEDA's dependency.
-Check the version of your python with `python -V`.
+VEDA requires Node.js for some features (server mode, OSC, etc).
+Please install Node.js before using VEDA.
 
-If you've already installed both Python 2 and 3, you have to tell npm to use python 2.
-Run `npm config set python python2`.
+https://nodejs.org/
 
 
 ## 2. Install VEDA

@@ -13,10 +13,12 @@ If you have any question, feel free to ask on:
 
 In most cases, one of following will solve the problem.
 
-#### Python2.x is not installed
+#### Node.js not installed
 
-VEDA requires Python 2.x to be installed on your PC to build Node.js native add-ons.
-If Python 3.x is installed, change your settings and make sure `python` is linked to Python2.x.
+Some features (server mode, OSC, etc) require Node.js to be installed in your PC.
+Please install Node.js and restart VEDA.
+
+https://nodejs.org/
 
 #### VEDA must be rebuilt
 

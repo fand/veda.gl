@@ -14,11 +14,10 @@ Atomを光らせよう。
 
 ## 1. 事前準備
 
-VEDAはNode.jsのネイティブアドオンを利用するため、Python 2系をインストールする必要があります。
-ターミナルで `python -V` を実行して、Pythonのバージョンを確認してください。
+VEDAの機能をフルに使うには、Node.jsをインストールする必要があります。
+お好みの手段で事前にインストールしてください。
 
-既にPython2と3をインストール済みの場合、npmがPython2を参照するように設定します。
-ターミナルから `npm config set python python2` を実行して下さい。
+https://nodejs.org/ja/
 
 
 ## 2. VEDA本体のインストール

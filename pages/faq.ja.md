@@ -13,12 +13,12 @@ title: FAQ
 
 ほとんどの場合は以下のどれかが原因です。
 
+#### Node.jsがインストールされていない
 
-#### Python2.xがインストールされていない
+Server ModeやOSCなど、いくつかの機能ではPCにNode.jsがインストールされている必要があります。
+Node.jsをインストールし、VEDAを再起動してください。
 
-VEDAはNode.jsのネイティブアドオンに依存しているため、Python2系が必要です。
-Python3系がインストールされている場合は、 `python` がPython2系を指すようにして下さい。
-
+https://nodejs.org/ja/
 
 #### パッケージのRebuildが必要
 
