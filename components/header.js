@@ -66,7 +66,7 @@ const Left = styled.div`
 const Right = styled.div`
   position: absolute;
   display: flex;
-  right: 0;
+  right: 20px;
 `;
 const Button = styled.div`
   cursor: pointer;
