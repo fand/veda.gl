@@ -31,7 +31,7 @@
     "redux": "^4.0.4",
     "redux-saga": "^1.0.5",
     "sanitize.css": "^11.0.0",
-    "styled-components": "^4.3.2",
+    "styled-components": "^5.0.0",
     "url-parse": "^1.4.7",
     "vedajs": "^0.13.0"
   },
