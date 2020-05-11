@@ -16,11 +16,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hideHeader", function() { return hideHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLanguage", function() { return setLanguage; });
 var actionTypes = {
-  TOGGLE_MENU: 'TOGGLE_MENU',
-  HIDE_MENU: 'HIDE_MENU',
-  SHOW_HEADER: 'SHOW_HEADER',
-  HIDE_HEADER: 'HIDE_HEADER',
-  SET_LANGUAGE: 'SET_LANGUAGE'
+  TOGGLE_MENU: "TOGGLE_MENU",
+  HIDE_MENU: "HIDE_MENU",
+  SHOW_HEADER: "SHOW_HEADER",
+  HIDE_HEADER: "HIDE_HEADER",
+  SET_LANGUAGE: "SET_LANGUAGE"
 };
 function toggleMenu() {
   return {
@@ -16842,7 +16842,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var exampleInitialState = {
-  lang: 'en',
+  lang: "en",
   isMenuVisible: false,
   isHeaderVisible: false
 };
@@ -16872,12 +16872,12 @@ function reducer() {
       });
 
     case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].SET_LANGUAGE:
-      if (action.lang === 'en') {
+      if (action.lang === "en") {
         window.history.replaceState({}, document.title, location.pathname);
       }
 
-      if (action.lang === 'ja') {
-        window.history.replaceState({}, document.title, location.pathname + '?lang=ja');
+      if (action.lang === "ja") {
+        window.history.replaceState({}, document.title, location.pathname + "?lang=ja");
       }
 
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
